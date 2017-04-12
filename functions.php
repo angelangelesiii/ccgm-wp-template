@@ -152,6 +152,9 @@ function ccgm_scripts() {
 	// Fontawesome
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri().'/css/fa/css/font-awesome.min.css' );
 
+	// Google Fonts
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Lato:100,300,400,700,900' );
+
 	// Foundation Grid
 	wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/foundation.css' );
 

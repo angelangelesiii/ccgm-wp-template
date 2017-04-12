@@ -2,3 +2,23 @@
 MAIN STYLESHEET
 Author: Zimit Media
 */
+
+/* ========================================= */
+/* Structure                                 */
+/* ========================================= */
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #555555;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 974px;
+	margin: 0 auto;
+}
+.wrapper-big {
+	width: 100%;
+	max-width: 1274px;
+	margin: 0 auto;
+}
