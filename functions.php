@@ -83,7 +83,10 @@ function ccgm_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Header Main Menu', 'ccgm' ),
+		'header-menu-1' => esc_html__( 'Header Main Menu', 'ccgm' ),
+		'fotoer-menu-3' => esc_html__( 'Main Footer Menu', 'ccgm' ),
+		'footer-menu-2' => esc_html__( 'Footer Small Menu', 'ccgm' ),
+		'woocommerce-menu' => esc_html__( 'Shopping Account Menu', 'ccgm' ),
 	) );
 
 	/*
