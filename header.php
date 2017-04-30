@@ -30,14 +30,17 @@
 	?>
 
 	<header id="ccgm-header" class="site-header <?php echo $fpClass; ?>">
-		<div class="wrapper-big">
-			<nav class="header-nav">
-				<div class="logo-container">
-					<h1><a href="<?php echo home_url(); ?>">CCGM</a></h1>
+		<div class="wrapper-medium">
+			<nav class="header-nav .clearfix">
+				<div class="logo-container clearfix">
+					<a href="<?php echo home_url(); ?>" class="clearfix">
+						<img src="<?php echo get_template_directory_uri().'/images/branding/logo-boxed-white.png' ?>" alt="Logo" class="logo">
+						<h1>CCGM</h1>
+					</a>
 				</div>
 				<div class="menu-container">
 					<?php
-						wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'mobile-main-menu' ) ); // Calls the primary main menu for mobile navigation.
+						wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'main-nav-menu', 'depth' => '2' ) );
 						?>
 				</div>
 			</nav>
