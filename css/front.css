@@ -2,3 +2,13 @@
 MAIN STYLESHEET
 Author: Zimit Media
 */
+
+/* ========================================= */
+/* BANNER                                    */
+/* ========================================= */
+
+.banner {
+	background: url('../images/background/worship.jpg');
+	background-position: center center;
+	background-size: cover;
+}
