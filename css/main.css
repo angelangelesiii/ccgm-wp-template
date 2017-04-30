@@ -22,13 +22,21 @@ body {
 	clear: both;
 }
 
+/*Wrapper*/
 .wrapper {
 	width: 100%;
-	max-width: 974px;
+	max-width: 972px;
 	margin: 0 auto;
+	padding: 0 10px;
+}
+.wrapper-medium {
+	width: 100%;
+	max-width: 1172px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 .wrapper-big {
 	width: 100%;
-	max-width: 1274px;
+	max-width: 1622px;
 	margin: 0 auto;
 }
