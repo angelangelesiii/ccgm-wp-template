@@ -49,7 +49,11 @@ get_header(); ?>
 		</section>
 
 		<section class="sample">
-			<div class="wrapper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate deleniti impedit temporibus dolore iusto, a eius dolorum soluta, et quis sunt architecto accusamus pariatur. Nostrum incidunt maxime, ab libero ex delectus impedit quia fugit modi! Perferendis voluptate incidunt voluptatum iure earum, culpa nisi dolor accusantium ad. Consectetur, porro, aperiam? Libero id magni, quidem, voluptate possimus quas dignissimos dolores ab, facilis perferendis atque iure blanditiis. Quisquam saepe voluptatem velit laboriosam natus iste omnis earum vel vitae est reiciendis asperiores, distinctio nisi sint, adipisci qui aut sed. Tempora totam, explicabo placeat fugiat omnis ducimus aliquam suscipit ut repellat unde! Dolorem nulla error repudiandae ipsum tenetur! Assumenda architecto magnam at accusamus necessitatibus ipsum, sunt! Quidem quam, numquam temporibus ullam praesentium eaque excepturi unde aliquid repellendus, vel. Animi deserunt, libero quae repudiandae quisquam omnis odit. Ratione velit assumenda maiores, laboriosam numquam maxime eius impedit repudiandae, laborum facilis dignissimos! Autem pariatur, doloremque illum possimus, aliquid natus similique iusto veniam saepe, enim accusantium! Maxime enim incidunt quasi ex dicta eaque voluptate veniam quis laborum repellendus optio, quas deleniti doloremque, minima mollitia, voluptatibus architecto assumenda minus necessitatibus, suscipit quo totam? Rerum qui nihil commodi amet animi nam eligendi itaque at, laboriosam iure quos eos, tenetur labore eum atque sapiente beatae ducimus sed nobis explicabo vitae odit?</div>
+			<div class="wrapper">
+				<h1>Front Page</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas velit adipisci porro saepe quibusdam eum aliquam exercitationem quisquam in. Rem minus quia ipsam assumenda soluta placeat cupiditate labore consequatur non, aliquam! Aperiam error reprehenderit deserunt perspiciatis, nostrum dolor dicta, in veniam itaque possimus obcaecati corrupti doloribus magni incidunt eaque nobis libero! Quae, adipisci!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate, beatae labore animi ducimus provident eum praesentium perferendis maiores error voluptatibus nulla obcaecati, cumque, quis reiciendis eius sequi, quas! Aperiam, repellendus, consectetur?</p>
+			</div>
 		</section>
 
 		</main><!-- #main -->
