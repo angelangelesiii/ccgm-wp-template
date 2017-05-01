@@ -6,6 +6,23 @@
 jQuery(document).ready(function($){ // Document Ready
 
 	// ===================================================
+	//  TYPED JS
+	// ===================================================
+
+	$('.welcome .changing').typed({
+		strings: [
+			'cares for you.',
+			'loves you.',
+			'wants you.'
+			],
+		typeSpeed: 50,
+		backSpeed: 25,
+		backDelay: 3000,
+		loop: true
+	});
+
+
+	// ===================================================
 	//  ScrollMagic Controller
 	// ===================================================
 
