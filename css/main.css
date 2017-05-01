@@ -61,7 +61,7 @@ a.btn {
 	color: #8D4949;
 	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 0.15em;
+	letter-spacing: 0.25em;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 0.9em;
 	font-weight: bold;
@@ -81,7 +81,9 @@ a.btn.btn-transparent-white {
 a.btn.btn-transparent-white:hover {
 	background: rgba(0,0,0,0.75);
 }
-
+a.btn-expanding:hover {
+	padding: 15px 40px;
+}
 
 /* ========================================= */
 /* HEADER and NAV                            */

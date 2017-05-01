@@ -34,7 +34,7 @@ get_header(); ?>
 			<div class="content">
 				<img src="<?php echo get_template_directory_uri().'/images/display/salvation-is-here.png' ?>" alt="" class="banner-display">
 				<p class="text">
-					<a href="#" class="btn btn-transparent-white">Claim Your Salvation</a>
+					<a href="#" class="btn btn-transparent-white btn-expanding">Claim Your Salvation</a>
 				</p>
 			</div>
 
