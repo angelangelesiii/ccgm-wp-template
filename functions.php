@@ -216,6 +216,10 @@ function ccgm_scripts() {
 	// Main and Front JS
 	wp_enqueue_script( 'main-js', get_template_directory_uri().'/js/main.js', false, false, true );
 	if (is_front_page()) wp_enqueue_script( 'front-js', get_template_directory_uri().'/js/front.js', false, false, true );
+
+	// Typed JS
+	if (is_front_page()) wp_enqueue_script( 'typed-js', get_template_directory_uri().'/js/typed.js', false, false, true );
+
 }
 add_action( 'wp_enqueue_scripts', 'ccgm_scripts' );
 
