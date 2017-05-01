@@ -53,6 +53,35 @@ body.not-front-page {
 	min-height: 600px;
 }
 
+/*Button*/
+a.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	background: #FF9595;
+	color: #8D4949;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-radius: 26px;
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+a.btn:hover {
+	background: #FFBBBB;
+}
+a.btn.btn-transparent-white {
+	background: rgba(0,0,0,0);
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+}
+a.btn.btn-transparent-white:hover {
+	background: rgba(0,0,0,0.75);
+}
+
 
 /* ========================================= */
 /* HEADER and NAV                            */
