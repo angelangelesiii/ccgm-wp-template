@@ -17,19 +17,20 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+
+<?php 
+// If front page, add 'front-page' class
+$fpClass = 'not-front-page';
+if(is_front_page()) $fpClass = 'front-page';
+?>
+
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class($fpClass); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ccgm' ); ?></a>
 
-	<?php 
-	// If front page, add 'front-page' class
-	$fpClass = '';
-	if(is_front_page()) $fpClass = 'front-page';
-	?>
-
-	<header id="ccgm-header" class="site-header <?php echo $fpClass; ?>">
+	<header id="ccgm-header" class="site-header top-position <?php echo $fpClass; ?>">
 		<div class="wrapper-medium">
 			<nav class="header-nav .clearfix">
 				<div class="logo-container clearfix">
@@ -46,5 +47,9 @@
 			</nav>
 		</div>
 	</header>
+
+	<?php if(!is_front_page()) : ?>
+	<div class="header-spacer"></div>
+	<?php endif; ?>
 
 	<div id="content" class="site-content">
