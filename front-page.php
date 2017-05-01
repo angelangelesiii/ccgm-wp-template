@@ -17,8 +17,27 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<section class="banner full-page">
+		<?php 
+		// Options for parallax background
+		$parallaxBG = 'background: none;';
+		if (get_field('banner_background','options')) $parallaxBG = 'background: url(\''.get_field('banner_background','options').'\');';
+		?>
+
+		<section class="banner full-page" style="<?php echo $parallaxBG; ?>">
 			
+			<?php if(get_field('parallax_boolean','options') == true) : ?>
+			<div class="parallax-bg" style="<?php echo $parallaxBG; ?>"></div>
+			<?php endif; ?>
+
+			<div class="overlay"></div>
+
+			<div class="content">
+				<img src="<?php echo get_template_directory_uri().'/images/display/salvation-is-here.png' ?>" alt="" class="banner-display">
+				<p class="text">
+					<a href="#" class="btn btn-transparent-white">Claim Your Salvation</a>
+				</p>
+			</div>
+
 		</section>
 
 		<section class="sample">

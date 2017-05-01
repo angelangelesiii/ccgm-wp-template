@@ -8,7 +8,44 @@ Author: Zimit Media
 /* ========================================= */
 
 .banner {
-	background: url('../images/background/worship.jpg');
-	background-position: center center;
-	background-size: cover;
+	background-position: center center !important;
+	background-size: cover !important;
+	position: relative;
+	overflow: hidden;
+}
+.banner .parallax-bg {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 150%;
+	background-position: center center !important;
+	background-size: cover !important;
+	top: 0;
+}
+.banner .overlay {
+	position: absolute;
+	background: rgba(0,0,0,0.2);
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+.banner .content {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	max-width: 920px;
+	margin: 0 auto;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.banner .content .banner-display {
+	max-height: 270px;
+	margin-top: 50px;
+}
+.banner .content .text {
+	margin: 50px 0 0;
 }
