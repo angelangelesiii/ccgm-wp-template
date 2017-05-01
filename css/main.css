@@ -81,6 +81,22 @@ a.btn.btn-transparent-white {
 a.btn.btn-transparent-white:hover {
 	background: rgba(0,0,0,0.75);
 }
+a.btn.btn-transparent-black {
+	background: rgba(255,255,255,0);
+	border: 2px solid #000000;
+	color: #000000;
+}
+a.btn.btn-transparent-black:hover {
+	background: rgba(255,255,255,0.75);
+}
+a.btn.btn-transparent-gray {
+	background: rgba(255,255,255,0);
+	border: 2px solid #555555;
+	color: #555555;
+}
+a.btn.btn-transparent-gray:hover {
+	background: rgba(255,255,255,0.75);
+}
 a.btn-expanding:hover {
 	padding: 15px 40px;
 }
