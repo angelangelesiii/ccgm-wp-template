@@ -173,3 +173,35 @@ a.btn-expanding:hover {
 #ccgm-header .menu-container li.menu-item a:hover::before {
 	width: 100%;
 }
+
+
+/* ========================================= */
+/* FOOTER                                    */
+/* ========================================= */
+
+.site-footer {
+	background: #000000;
+	color: #FFFFFF;
+}
+.site-footer .content {
+	padding: 30px 0 20px;
+	font-weight: 200;
+}
+.site-footer .content p {
+	font-size: 0.9em;
+	margin: 0;
+}
+.site-footer .content .footer-title {
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 0.1em;
+	font-size: 1.6em;
+}
+.site-footer .footer-footer {
+	padding: 10px 0;
+	color: #B4B4B4;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}

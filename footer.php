@@ -13,12 +13,28 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ccgm' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'ccgm' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'ccgm' ), 'ccgm', '<a href="https://automattic.com/" rel="designer">Zimit Media</a>' ); ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer <?php if($fpClass) echo $fpClass; ?>" role="contentinfo">
+
+		<div class="content">
+			<div class="wrapper-medium">
+				
+				<div class="row collapse">
+					<div class="column small-12 large-6">
+						<h2 class="footer-title">Christ Cares Global Ministries</h2>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="footer-footer">
+			<div class="wrapper-medium">
+			
+			&copy; <?php echo date('Y'); ?> Christ Cares Global Ministries - Design by <strong>Zimit Media</strong>
+			
+			</div>
+		</div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
