@@ -178,7 +178,7 @@ a.btn-expanding:hover {
 	transform: translateX(-50%);
 	height: 4px;
 	width: 0;
-	background: #FF9595;
+	background: #FFFFFF;
 	-webkit-transition: all 0.25s;
 	-o-transition: all 0.25s;
 	transition: all 0.25s;
