@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main blog-area" role="main">
 
-		<div class="wrapper-medium">
+		<div class="wrapper">
 
 			<div class="wrapper">
 			<?php get_template_part( 'template-parts/search-template' ); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 				<div class="column article-column blog-column small-12">
 				<?php if(have_posts()) : ?>
 
-					<div class="row large-up-4 medium-up-3 small-up-1">
+					<div class="row large-up-3 medium-up-2 small-up-1">
 
 					<?php while(have_posts()) : the_post(); // Start Loop?>
 
