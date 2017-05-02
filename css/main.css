@@ -304,6 +304,26 @@ a.btn-expanding:hover {
 	background: #EDEDED;
 }
 
+/* ========================================= */
+/* RECENT POSTS SECTION                      */
+/* ========================================= */
+
+.recent-posts {
+	background: #EBEBEB;
+	padding: 75px 0;
+	text-align: center;
+	margin: 0 !important;
+}
+.recent-posts h2.section-title {
+	font-size: 3em;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+.recent-posts .posts-strip {
+	margin: 20px 0 40px;
+}
+
 
 /* ========================================= */
 /* BLOG                                      */
