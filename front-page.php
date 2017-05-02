@@ -42,6 +42,7 @@ get_header(); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-welcome' ); ?>
 
+		<?php get_template_part( 'template-parts/fp-section-posts' ); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
 
