@@ -188,6 +188,9 @@ function ccgm_scripts() {
 	wp_enqueue_style( 'main', get_template_directory_uri().'/css/main.css' );
 	if (is_front_page()) wp_enqueue_style( 'front', get_template_directory_uri().'/css/front.css' );
 
+	// ACF Google Maps
+	wp_enqueue_style( 'acf-map', get_template_directory_uri().'/css/acf-map.css' );
+
 
 
 	// SCRIPTS
@@ -217,8 +220,14 @@ function ccgm_scripts() {
 	wp_enqueue_script( 'main-js', get_template_directory_uri().'/js/main.js', false, false, true );
 	if (is_front_page()) wp_enqueue_script( 'front-js', get_template_directory_uri().'/js/front.js', false, false, true );
 
+	// Google Maps JS
+	wp_enqueue_script( 'gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBPL_70m6Amg9Tej-BHQVE0fZons4Jl1PY', false, false, true);
+
 	// Typed JS
 	if (is_front_page()) wp_enqueue_script( 'typed-js', get_template_directory_uri().'/js/typed.js', false, false, true );
+
+	// ACF MAP JS
+	if (is_front_page()) wp_enqueue_script( 'acf-map', get_template_directory_uri().'/js/acf-map.js', false, false, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'ccgm_scripts' );
