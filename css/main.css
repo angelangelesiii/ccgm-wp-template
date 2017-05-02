@@ -255,6 +255,55 @@ a.btn-expanding:hover {
 	letter-spacing: 0.1em;
 }
 
+/* ========================================= */
+/* ACTIVITY INFO SECTION                     */
+/* ========================================= */
+
+.activity-info {
+	padding: 60px 0;
+}
+.activity-info .schedule {
+	padding: 0 20px !important;
+}
+.activity-info .schedule h2 {
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 2em;
+}
+.activity-info .schedule p {
+	font-size: 1.3em;
+	margin: 5px 0;
+}
+.activity-info .schedule .schedule-table {
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid #555555;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.activity-info .schedule .schedule-table thead {
+	background: #707070;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.activity-info .schedule .schedule-table thead td {
+	padding: 10px 10px;
+	font-weight: bold;
+	letter-spacing: 0.1em
+}
+.activity-info .schedule .schedule-table tbody td {
+	padding: 10px 10px;
+	font-weight: normal;
+}
+.activity-info .schedule .schedule-table tbody tr:nth-of-type(even) {
+	background: #E2E2E2;
+}
+.activity-info .schedule .schedule-table tbody tr:nth-of-type(odd) {
+	background: #EDEDED;
+}
+
 
 /* ========================================= */
 /* BLOG                                      */
