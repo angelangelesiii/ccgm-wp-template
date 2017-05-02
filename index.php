@@ -79,7 +79,11 @@ get_header(); ?>
 			
 		</div>
 
+
 		</main><!-- #main -->
+
+		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
+		
 	</div><!-- #primary -->
 
 <?php
