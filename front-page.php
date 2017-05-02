@@ -43,6 +43,8 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/fp-section-welcome' ); ?>
 
 
+		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
