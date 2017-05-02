@@ -18,6 +18,9 @@ get_header(); ?>
 		<main id="main" class="site-main blog-area" role="main">
 
 		<div class="wrapper">
+			<div class="wrapper-medium">
+			<?php get_template_part( 'template-parts/featured-posts' ); ?>
+			</div>
 
 			<div class="wrapper">
 			<?php get_template_part( 'template-parts/search-template' ); ?>

@@ -37,4 +37,18 @@ jQuery(document).ready(function($){ // Document Ready
 
 	$('.header-spacer').height($('#ccgm-header').outerHeight());
 
+
+	// ===================================================
+	//  Slick Carousel for Featured Posts
+	// ===================================================
+
+	$('.featured-posts-carousel').slick({
+		speed: 1000,
+		autoplay: true,
+		autoplaySpeed: 6000,
+		dots: true,
+		prevArrow: '<button class="carousel-button prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+		nextArrow: '<button class="carousel-button next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+	});
+
 });
