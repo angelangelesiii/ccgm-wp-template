@@ -50,10 +50,12 @@ body.not-front-page {
 .site-main a:visited {
 	text-decoration: none;
 	color: #C24E4E;
+	outline: 0;
 }
 .site-main a:hover {
 	color: #E46060;
 	text-decoration: underline;
+	outline: 0;
 }
 
 
@@ -195,6 +197,11 @@ a.btn-expanding:hover {
 	padding: 19px 8px;
 	display: inline-block;
 	position: relative;
+	outline: 0;
+}
+#ccgm-header .menu-container li.menu-item.current-menu-item a {
+	color: #A9CBF5;
+	font-weight: bold;
 }
 #ccgm-header .menu-container li.menu-item a::before {
 	position: absolute;
