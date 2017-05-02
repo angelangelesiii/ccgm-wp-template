@@ -42,13 +42,6 @@ get_header(); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-welcome' ); ?>
 
-		<section class="sample">
-			<div class="wrapper">
-				<h1>Front Page</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas velit adipisci porro saepe quibusdam eum aliquam exercitationem quisquam in. Rem minus quia ipsam assumenda soluta placeat cupiditate labore consequatur non, aliquam! Aperiam error reprehenderit deserunt perspiciatis, nostrum dolor dicta, in veniam itaque possimus obcaecati corrupti doloribus magni incidunt eaque nobis libero! Quae, adipisci!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque voluptate, beatae labore animi ducimus provident eum praesentium perferendis maiores error voluptatibus nulla obcaecati, cumque, quis reiciendis eius sequi, quas! Aperiam, repellendus, consectetur?</p>
-			</div>
-		</section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
