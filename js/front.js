@@ -44,4 +44,23 @@ jQuery(document).ready(function($){ // Document Ready
 	.addIndicators()
 	.addTo(fpController);
 
+
+	// ===================================================
+	//  Recent Posts Stagger
+	// ===================================================
+
+	var rpStagger = new ScrollMagic.Scene({
+		triggerElement: '.posts-strip',
+		triggerHook: 1,
+		offset: 150,
+		reverse: false
+	})
+	.setTween(TweenMax.staggerFrom('.recent-posts .article-item', 1.25, {
+		y: '50px',
+		autoAlpha: 0,
+		ease: Power3.easeOut
+	}, 0.32))
+	.addIndicators()
+	.addTo(fpController);
+
 });
