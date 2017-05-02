@@ -15,44 +15,64 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main blog-area" role="main">
 
-		<div class="wrapper">
-			<?php
-			if ( have_posts() ) :
+		<div class="wrapper-medium">
+
+			<div class="row">
+				
+				<div class="column article-column blog-column large-9 medium-8 small-12">
+				<?php if(have_posts()) : ?>
+
+					<div class="row large-up-3 medium-up-2 small-up-1">
+
+					<?php while(have_posts()) : the_post(); // Start Loop?>
+
+						<article class="column column-block article-item articleID-<?php the_id(); ?>">
+							<div class="article-box">
+
+								<?php // For post thumbnail
+								$thumbnailCSS = '';
+								if(has_post_thumbnail()) $thumbnailCSS = 'style="background-image: url(\''.get_the_post_thumbnail_url().'\')"'
+								?>
+
+								<a href="<?php the_permalink(); ?>" class="article-thumbnail-container">
+									<div class="article-thumbnail" <?php echo $thumbnailCSS; ?>></div>
+								</a>
+
+								<div class="article-content">
+									<h2 class="article-title"><?php the_title(); ?></h2>
+									<?php the_excerpt(); ?>
+								</div>
+
+								<footer class="article-footer">
+									<a href="<?php the_permalink(); ?>" class="read-more">Read Full</a>
+								</footer>
+
+							</div>
+						</article>
+
+					<?php endwhile; // End Loop ?>
+
+					</div>
+
+				<?php else : ?>
+
+
+
+				<?php endif; ?>
+				</div>
+
+				<div class="column widget-column blog-column large-3 medium-4 small-12">
+					<?php get_sidebar(); ?>
+				</div>
+
+			</div>
 			
-				if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-			
-				<?php
-				endif;
-			
-				/* Start the Loop */
-				while ( have_posts() ) : the_post();
-			
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-			
-				endwhile;
-			
-				the_posts_navigation();
-			
-			else :
-			
-				get_template_part( 'template-parts/content', 'none' );
-			
-			endif; ?>
 		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

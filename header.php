@@ -31,15 +31,21 @@ if(is_front_page()) $fpClass = 'front-page';
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ccgm' ); ?></a>
 
 	<header id="ccgm-header" class="site-header top-position <?php echo $fpClass; ?>">
-		<div class="wrapper-medium">
+		<div class="wrapper-big">
 			<nav class="header-nav .clearfix">
+
+				<div class="mobile-menu-button-container hide-for-large">
+					<button class="mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+
 				<div class="logo-container clearfix">
 					<a href="<?php echo home_url(); ?>" class="clearfix">
 						<img src="<?php echo get_template_directory_uri().'/images/branding/logo-boxed-white.png' ?>" alt="Logo" class="logo">
 						<h1>CCGM</h1>
 					</a>
 				</div>
-				<div class="menu-container">
+
+				<div class="menu-container show-for-large">
 					<?php
 						wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'main-nav-menu', 'depth' => '2' ) );
 						?>
