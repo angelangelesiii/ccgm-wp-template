@@ -233,7 +233,7 @@ function ccgm_scripts() {
 	if (is_front_page()) wp_enqueue_script( 'typed-js', get_template_directory_uri().'/js/typed.js', false, false, true );
 
 	// ACF MAP JS
-	if (is_front_page()) wp_enqueue_script( 'acf-map', get_template_directory_uri().'/js/acf-map.js', false, false, true );
+	wp_enqueue_script( 'acf-map', get_template_directory_uri().'/js/acf-map.js', false, false, true );
 
 }
 add_action( 'wp_enqueue_scripts', 'ccgm_scripts' );
