@@ -265,15 +265,17 @@ a.btn-expanding:hover {
 
 .activity-info {
 	padding: 60px 0;
+	text-align: center;
 }
 .activity-info .schedule {
 	padding: 0 20px !important;
+	text-align: center;
 }
-.activity-info .schedule h2 {
-	margin: 0 0 10px;
+.activity-info h2 {
+	margin: 0 0 40px;
 	text-transform: uppercase;
 	font-weight: 900;
-	font-size: 2em;
+	font-size: 2.4em;
 }
 .activity-info .schedule p {
 	font-size: 1.3em;
@@ -286,6 +288,7 @@ a.btn-expanding:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	text-align: left;
 }
 .activity-info .schedule .schedule-table thead {
 	background: #707070;
@@ -306,6 +309,11 @@ a.btn-expanding:hover {
 }
 .activity-info .schedule .schedule-table tbody tr:nth-of-type(odd) {
 	background: #EDEDED;
+}
+.activity-info .acf-map {
+	border-radius: 8px;
+	border: solid 1px #C5C5C5;
+	overflow: hidden;
 }
 
 /* ========================================= */

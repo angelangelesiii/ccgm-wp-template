@@ -3,13 +3,15 @@
 	
 	<div class="wrapper-medium">
 
+		<h2>Come and <span class="text-accent">join us</span></h2>
+
 		<div class="row collapse">
 			
 		
 			<div class="column large-6 small-12 large-push-6 schedule ">
 				<div class="content">
-					<h2>Schedule of <span class="text-accent">Activities</span></h2>
-					<p>Come and join us on these schedules.</p>
+					
+					<p>We'd love to see you one of these days!</p>
 					<table class="schedule-table">
 						<thead>
 							<tr>
