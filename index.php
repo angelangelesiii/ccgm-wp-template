@@ -21,10 +21,10 @@ get_header(); ?>
 
 			<div class="row">
 				
-				<div class="column article-column blog-column large-9 medium-8 small-12">
+				<div class="column article-column blog-column small-12">
 				<?php if(have_posts()) : ?>
 
-					<div class="row large-up-3 medium-up-2 small-up-1">
+					<div class="row large-up-4 medium-up-3 small-up-1">
 
 					<?php while(have_posts()) : the_post(); // Start Loop?>
 
@@ -63,8 +63,8 @@ get_header(); ?>
 				<?php endif; ?>
 				</div>
 
-				<div class="column widget-column blog-column large-3 medium-4 small-12">
-					<?php get_sidebar(); ?>
+				<div class="widget-column">
+					<?php // get_sidebar(); ?>
 				</div>
 
 			</div>
