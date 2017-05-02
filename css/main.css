@@ -121,6 +121,10 @@ a.btn-expanding:hover {
 	color: #3D7FD1;
 }
 
+.header-spacer {
+	height: 59px;
+}
+
 
 
 /* ========================================= */
@@ -345,8 +349,8 @@ a.btn-expanding:hover {
 	margin: 40px 0;
 }
 .blog-area article.article-item {
-	margin-bottom: 14px;
-	padding: 0 7px;
+	margin-bottom: 30px;
+	padding: 0 15px;
 }
 .blog-area article.article-item .article-box {
 	background: #FFFFFF;
@@ -419,6 +423,27 @@ a.btn-expanding:hover {
 .blog-area article.article-item .article-footer a.read-more:hover {
 	background: #3D7FD1;
 	color: #FFFFFF;
+}
+
+
+/*==============================*/
+/* SEARCH FORM                  */
+/*==============================*/
+
+.main-search-form {
+	margin: 20px 0;
+}
+.main-search-form .searchform {
+	display: flex;
+}
+.main-search-form .searchform .searchbox {
+	flex-grow: 1;
+	outline: none;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	border-radius: 0;
 }
 
 

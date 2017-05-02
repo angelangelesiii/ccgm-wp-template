@@ -19,6 +19,10 @@ get_header(); ?>
 
 		<div class="wrapper-medium">
 
+			<div class="wrapper">
+			<?php get_template_part( 'template-parts/search-template' ); ?>
+			</div>
+
 			<div class="row">
 				
 				<div class="column article-column blog-column small-12">
