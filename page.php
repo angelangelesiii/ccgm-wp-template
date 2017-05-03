@@ -15,22 +15,55 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main page" role="main">
 
-			<?php
-			while ( have_posts() ) : the_post();
+			<?php while(have_posts()): the_post(); ?>
 
-				get_template_part( 'template-parts/content', 'page' );
+			<?php 
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+			$headerBackground = '';
 
-			endwhile; // End of the loop.
+			if(has_post_thumbnail()) $headerBackground = 'style=" background-image: url(\''.get_the_post_thumbnail_url().'\'); "';
+
 			?>
+			
+			<article class="page-article">
+
+				<header class="page-header<?php if(has_post_thumbnail()) echo ' has-post-thumbnail'; ?>" <?php echo $headerBackground ?>>
+
+					<?php if(has_post_thumbnail()) : ?>
+					<div class="overlay"></div>
+					<?php endif; ?>
+				
+					<div class="content">
+						<div class="wrapper">
+							<h1 class="page-title"><?php the_title(); ?></h1>
+							<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this'); ?>
+						</div>
+					</div>
+
+
+				
+				</header>
+				
+				<div class="wrapper">
+				
+					<div class="page-content">
+						<?php the_content(); ?>
+					</div>
+				
+				</div>
+
+			</article>
+
+		<?php endwhile; ?>
+		
+		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
 
 		</main><!-- #main -->
+		
+		
+
 	</div><!-- #primary -->
 
 <?php
