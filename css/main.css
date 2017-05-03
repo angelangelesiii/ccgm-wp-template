@@ -683,6 +683,7 @@ a.btn-expanding:hover {
 /* SEARCH FORM                  */
 /*==============================*/
 
+/*Main Search Form*/
 .main-search-form {
 	margin: 40px 0;
 }
@@ -728,14 +729,20 @@ a.btn-expanding:hover {
 SMALL ONLY <640px
 */
 @media screen and (max-width: 39.9375em) {
-	
+	/*Activity Section*/
+	.activity-info .location {
+		padding: 0 10px !important;
+	}
 }
 
 /*
 MEDIUM ONLY <1024px and >=640px
 */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
+	/*Activity Section*/
+	.activity-info .location {
+		padding: 0 20px !important;
+	}
 }
 
 /*
@@ -750,6 +757,12 @@ MEDIUM BELOW <1024px
 		transform: inherit;
 		margin: 0;
 	}
+
+	/*Activity Section*/
+	.activity-info .schedule {
+		padding: 0 0 30px !important;
+	}
+
 }
 
 /*
