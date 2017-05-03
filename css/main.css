@@ -271,6 +271,36 @@ a.btn-expanding:hover {
 	letter-spacing: 0.1em;
 }
 
+/*Main Footer Menu*/
+.footer-nav {
+	border-bottom: 1px solid #0E0E0E;
+}
+#footer-nav-menu {
+	padding: 16px 0;
+	margin: 0;
+	list-style-type: none;
+}
+#footer-nav-menu > li {
+	display: inline-block;
+	padding: 10px 7px;
+}
+#footer-nav-menu > li:nth-of-type(1) {
+	padding-left: 0;
+}
+#footer-nav-menu > li a {
+	text-decoration: none;
+	color: #B4B4B4;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+#footer-nav-menu > li a:hover {
+	color: #FFFFFF;
+}
+
+
 /* ========================================= */
 /* ACTIVITY INFO SECTION                     */
 /* ========================================= */

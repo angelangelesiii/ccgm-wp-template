@@ -15,6 +15,14 @@
 
 	<footer id="colophon" class="site-footer <?php if($fpClass) echo $fpClass; ?>" role="contentinfo">
 
+		<nav class="footer-nav">
+			<div class="wrapper-medium">
+				<?php
+				wp_nav_menu( array( 'theme_location' => 'footer-menu-1', 'menu_id' => 'footer-nav-menu', 'depth' => '1' ) );
+				?>
+			</div>
+		</nav>
+
 		<div class="content">
 			<div class="wrapper-medium">
 				
