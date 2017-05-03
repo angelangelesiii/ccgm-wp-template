@@ -106,7 +106,9 @@ Author: Zimit Media
 /* ========================================= */
 
 .pastors {
-	background: #3E3E3E;
+	background: url('../images/background/city-blurred.jpg');
+	background-size: cover;
+	background-position: center center;
 	color: #FFFFFF;
 }
 .pastors .photo {
