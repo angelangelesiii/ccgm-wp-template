@@ -23,6 +23,7 @@
 $fpClass = 'not-front-page';
 if(is_front_page()) $fpClass = 'front-page';
 if(is_single()) $fpClass .= ' single-page';
+if(is_page()) $fpClass .= 'page'
 ?>
 
 </head>
@@ -48,8 +49,8 @@ if(is_single()) $fpClass .= ' single-page';
 
 				<div class="menu-container show-for-large">
 					<?php
-						wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'main-nav-menu', 'depth' => '2' ) );
-						?>
+					wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'main-nav-menu', 'depth' => '2' ) );
+					?>
 				</div>
 			</nav>
 		</div>
