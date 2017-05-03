@@ -52,7 +52,8 @@
 		
 				<div class="acf-map">
 					<div class="marker" data-lat="<?php echo $location['lat'] ?>" data-lng="<?php echo $location['lng'] ?>">
-						<h1>Christ Cares Global Ministries</h1>
+						<h3>Christ Cares Global Ministries</h3>
+						<p><?php echo $location['address'] ?></p>
 					</div>
 				</div>
 		

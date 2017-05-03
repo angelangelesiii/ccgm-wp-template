@@ -17,12 +17,17 @@
 	font-family: 'Raleway', 'Roboto', sans-serif !important;
 }
 .acf-map h3 {
-	font-size: 2em;
+	font-size: 1em;
 	margin: 10px 0;
+	text-transform: uppercase;
+	font-weight: 900;
 }
 .acf-map p {
+	font-family: 'Roboto', sans-serif !important;
 	margin: 0.5em 0 !important;
-	line-height: 1.5em;
+	line-height: 1.3em;
+	font-size: 1em;
+	max-width: 300px;
 }
 .acf-map i.fa {
 	font-size: 2em;
