@@ -14,6 +14,9 @@ body {
 body.not-front-page {
 	background: #E9E9E9;
 }
+body.page {
+	background: #FFFFFF;
+}
 
 /*Clearfix*/
 .clearfix:before,
@@ -590,7 +593,7 @@ a {
 
 
 /*==============================*/
-/* PAGE   POST                  */
+/* PAGE  POST                  */
 /*==============================*/
 
 .page-article .page-header.has-post-thumbnail {
@@ -599,6 +602,12 @@ a {
 	color: #FFFFFF;
 	background-size: cover;
 	background-position: center center;
+}
+.page-article .page-header {
+	min-height: 130px;
+	position: relative;
+	color: #FFFFFF;
+	background: #3D7FD1;
 }
 .page-article .page-header.has-post-thumbnail .overlay {
 	position: absolute;
@@ -609,20 +618,20 @@ a {
 	top: 0;
 	left: 0;
 }
-.page-article .page-header.has-post-thumbnail .content {
+.page-article .page-header .content {
 	position: absolute;
 	z-index: 2;
 	bottom: 0;
 	width: 100%;
 }
-.page-article .page-header.has-post-thumbnail .content h1 {
+.page-article .page-header .content h1 {
 	font-size: 3em;
 	font-weight: 900;
 	text-transform: uppercase;
 	margin: 0 0 20px;
 	display: inline-block;
 }
-.page-article .page-header.has-post-thumbnail .content a.post-edit-link {
+.page-article .page-header .content a.post-edit-link {
 	color: #FFFFFF;
 	display: inline-block;
 	padding: 5px 15px;
@@ -643,7 +652,8 @@ a {
 
 /*Content*/
 .page-article .page-content {
-	margin-bottom: 80px;
+	padding-top: 30px;
+	margin: 0 0 80px;
 	font-size: 1.1rem;
 }
 
