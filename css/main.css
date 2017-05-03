@@ -305,6 +305,9 @@ a.btn-expanding:hover {
 /* ACTIVITY INFO SECTION                     */
 /* ========================================= */
 
+.page .activity-info {
+	border-top: 1px solid #E7E7E7;
+}
 .activity-info {
 	padding: 60px 0 70px;
 	text-align: center;
