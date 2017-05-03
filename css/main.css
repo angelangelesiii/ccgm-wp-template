@@ -451,6 +451,109 @@ a.btn-expanding:hover {
 
 
 /*==============================*/
+/* SINGLE POST                  */
+/*==============================*/
+
+.single-page-post {
+	padding: 30px 0;
+}
+.single-page-post article.post-article {
+	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+}
+.single-page-post .article-header {
+	min-height: 400px;
+	background-size: cover;
+	background-position: center center;
+	background-color: #555555;
+	color: #FFFFFF;
+	position: relative;
+}
+.single-page-post .article-header .overlay {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.single-page-post .article-header .content {
+	position: absolute;
+	z-index: 2;
+	width: 60%;
+	bottom: 0;
+	left: 0;
+	padding: 10px 20px;
+}
+.single-page-post .article-header .content .article-title {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 2.5em;
+	margin: 0;
+	line-height: 1.2em;
+}
+.single-page-post .article-header .content .article-meta p {
+	margin: 10px 0;
+	font-size: 0.9em;
+}
+.single-page-post .article-header .author-avatar {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/*Search Form*/
+.single-page-post .article-header .search-form {
+	position: absolute;
+	z-index: 3;
+	top: 20px;
+	right: 20px;
+}
+.single-page-post .article-header .search-form .searchform {
+	display: flex;
+	border-radius: 19px;
+	overflow: hidden;
+}
+.single-page-post .article-header .search-form .searchform .searchbox {
+	flex-grow: 1;
+	padding: 8px 20px;
+	border-radius: 0;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9em;
+	outline: none;
+}
+.single-page-post .article-header .search-form .searchform .searchbox::placeholder {
+	color: #C8C8C8;
+}
+.single-page-post .article-header .search-form .searchform button {
+	border-radius: 0;
+	border: none;
+	background: #3D7FD1;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	outline: none;
+}
+.single-page-post .article-header .search-form .searchform button:hover {
+	background: #68A2EA;
+}
+
+/*Content*/
+.single-page-post .article-content {
+	padding: 20px 40px;
+}
+
+
+
+
+/*==============================*/
 /* FEATURED POSTS CAROUSEL      */
 /*==============================*/
 
