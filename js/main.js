@@ -39,6 +39,20 @@ jQuery(document).ready(function($){ // Document Ready
 
 
 	// ===================================================
+	//  Sticky Footer
+	// ===================================================
+
+	var windowHeight = $(window).height(),
+		headerHeight = $('#ccgm-header').outerHeight(),
+		footerHeight = $('#colophon').outerHeight(),
+		mainHeight = $('main.site-main');
+
+	var minMainHeight = windowHeight - (headerHeight + footerHeight);
+
+	mainHeight.css('min-height', minMainHeight);
+
+
+	// ===================================================
 	//  Slick Carousel for Featured Posts
 	// ===================================================
 
