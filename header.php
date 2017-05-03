@@ -23,7 +23,8 @@
 $fpClass = 'not-front-page';
 if(is_front_page()) $fpClass = 'front-page';
 if(is_single()) $fpClass .= ' single-page';
-if(is_page()) $fpClass .= 'page'
+if(is_page()) $fpClass .= ' page';
+if(is_woocommerce()) $fpClass .= ' shop-page';
 ?>
 
 </head>
