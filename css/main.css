@@ -162,6 +162,7 @@ a.btn-expanding:hover {
 	color: #FFFFFF;
 	text-decoration: none;
 	font-family: 'Josefin Sans', sans-serif;
+	outline: none;
 }
 #ccgm-header .logo-container .logo {
 	max-height: 32px;
