@@ -106,7 +106,8 @@ Author: Zimit Media
 /* ========================================= */
 
 .pastors {
-	background: url('../images/background/city-blurred.jpg');
+	/*background: url('../images/background/city-blurred.jpg');*/
+	background: #212121;
 	background-size: cover;
 	background-position: center center;
 	color: #FFFFFF;
@@ -122,7 +123,7 @@ Author: Zimit Media
 	display: inline-block;
 	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 	box-shadow: 0 10px 20px rgba(0,0,0,0.18);
-	border: 10px solid #FFFFFF;
+	/*border: 10px solid #FFFFFF;*/
 }
 .pastors .content {
 	padding: 40px 10px;
