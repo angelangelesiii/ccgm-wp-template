@@ -22,6 +22,7 @@
 // If front page, add 'front-page' class
 $fpClass = 'not-front-page';
 if(is_front_page()) $fpClass = 'front-page';
+if(is_single()) $fpClass .= ' single-page';
 ?>
 
 </head>
