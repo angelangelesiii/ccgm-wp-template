@@ -49,7 +49,14 @@ get_header(); ?>
 				<div class="wrapper">
 				
 					<div class="page-content">
-						<?php the_content(); ?>
+						<?php if(get_the_content()):
+							the_content();
+						else:
+						?>
+						<p class="no-content-found">
+							Coming Soon!
+						</p>
+						<?php endif; ?>
 					</div>
 				
 				</div>

@@ -656,6 +656,13 @@ a {
 	margin: 0 0 80px;
 	font-size: 1.1rem;
 }
+.page-article .page-content .no-content-found {
+	text-align: center;
+	margin: 100px 0;
+	font-size: 4em;
+	font-weight: 900;
+	color: #C2C2C2;
+}
 
 
 /*==============================*/
