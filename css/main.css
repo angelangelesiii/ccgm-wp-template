@@ -172,6 +172,9 @@ textarea {
 textarea:focus {
 	border: 3px solid #3D7FD1;
 }
+button,
+input[type="reset"],
+input[type="button"],
 input[type="submit"] {
 	padding: 15px 25px;
 	background: #3D7FD1;
@@ -184,6 +187,9 @@ input[type="submit"] {
 	border-radius: 23px;
 	outline: none;
 }
+button:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
 input[type="submit"]:hover {
 	background: #609BE4;
 }
