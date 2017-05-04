@@ -668,6 +668,59 @@ a {
 	color: #C2C2C2;
 }
 
+/*Events Manager Plugin*/
+.page-article .em-search-wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.page-article .em-search-main .em-search-submit {
+	background: #3D7FD1 !important;
+	border: none !important;
+}
+.page-article .css-events-list table.events-table {
+	border-radius: 8px;
+	overflow: hidden;
+}
+.page-article .css-events-list table.events-table td,
+.page-article .css-events-list table.events-table th {
+	padding: 15px 13px;
+}
+.page-article .css-events-list table.events-table thead {
+	text-align: left;
+	background: #707070;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.page-article .css-events-list table.events-table th.event-time {
+	width: auto;
+}
+.page-article .css-events-list table.events-table tbody tr:nth-of-type(odd) {
+	background: #EDEDED;
+}
+.page-article .css-events-list table.events-table tbody tr:nth-of-type(even) {
+	background: #E2E2E2;
+}
+.page-article .css-events-list table.events-table tbody td a {
+	font-weight: bold;
+}
+/*Events Manager Single*/
+.single-page-post .post-article.event .article-header {
+	min-height: 200px;
+}
+.single-page-post .post-article.event .article-header .search-form,
+.single-page-post .post-article.event .article-header .article-meta,
+.single-page-post .post-article.event .article-header .author-avatar {
+	display: none;
+}
+.page-article.event .em-booking-login label {
+	width: auto;
+	max-width: 130px;
+}
+.page-article.event .em-booking-login {
+	border-left: 3px solid #CCCCCC;
+}
+
+
 
 /*==============================*/
 /* FEATURED POSTS CAROUSEL      */
