@@ -14,7 +14,8 @@ body {
 body.not-front-page {
 	background: #E9E9E9;
 }
-body.page {
+body.page,
+body.single-event {
 	background: #FFFFFF;
 }
 
