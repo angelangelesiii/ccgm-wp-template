@@ -52,7 +52,7 @@ body.page {
 .site-content a:link,
 .site-content a:visited {
 	text-decoration: none;
-	color: #C24E4E;
+	color: #3D7FD1;
 	outline: 0;
 }
 .site-content a:hover {
@@ -140,7 +140,8 @@ a {
 /* ========================================= */
 
 #ccgm-header {
-	background: rgba(0,0,0,0.8);
+	/*background: rgba(0,0,0,0.9);*/
+	background: #000000;
 	position: fixed;
 	padding: 0;
 	top: 0;
