@@ -324,7 +324,7 @@ a {
 #ccgm-header.front-page.top-position .menu-container li.menu-item a::before {
 	background: #FFFFFF;
 }
-#ccgm-header .menu-container li.menu-item a:hover::before {
+#ccgm-header .menu-container li.menu-item:hover > a::before {
 	width: 100%;
 }
 
