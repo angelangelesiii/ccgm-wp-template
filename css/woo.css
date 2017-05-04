@@ -180,6 +180,37 @@ Author: Zimit Media
 	margin: 0;
 	padding-left: 20px;
 }
+.shop-sidebar .widget.widget_nav_menu h2 {
+	display: none;
+}
+.shop-sidebar .widget.widget_nav_menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.shop-sidebar .widget.widget_nav_menu ul a {
+	font-size: 1.1em;
+	padding: 5px 10px;
+	font-weight: bold;
+	display: block;
+	border-radius: 4px;
+}
+.shop-sidebar .widget.widget_nav_menu ul a:hover {
+	text-decoration: none;
+	color: #3D7FD1;
+	background: #E7E7E7;
+}
+.shop-sidebar .widget.widget_products ul {
+	padding: 0;
+	margin: 0;
+}
+.shop-sidebar .widget.widget_products ul > li {
+	padding: 7px;
+	border-radius: 4px;
+}
+.shop-sidebar .widget.widget_products ul > li:hover {
+	background: #F4F4F4;
+}
 
 /*Single Product*/
 .single-product-container {
