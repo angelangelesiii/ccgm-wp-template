@@ -27,7 +27,7 @@ get_header(); ?>
 
 			?>
 			
-			<article class="page-article">
+			<article <?php post_class( array( 'page-article' )); ?>>
 
 				<header class="page-header<?php if(has_post_thumbnail()) echo ' has-post-thumbnail'; ?>" <?php echo $headerBackground ?>>
 

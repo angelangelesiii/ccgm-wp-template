@@ -24,7 +24,7 @@ get_header(); ?>
 			
 			<div class="wrapper">
 				
-				<article class="post-article">
+				<article <?php post_class( array( 'post-article' )); ?>>
 					
 					<header class="article-header" <?php echo $headerBackground; ?>>
 
