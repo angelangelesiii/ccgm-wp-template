@@ -197,6 +197,9 @@ function ccgm_scripts() {
 	wp_enqueue_style( 'main', get_template_directory_uri().'/css/main.css' );
 	if (is_front_page()) wp_enqueue_style( 'front', get_template_directory_uri().'/css/front.css' );
 
+	// Woocommerce
+	if (is_woocommerce() || is_page_template( 'templates/template-woocommerce' )) wp_enqueue_style( 'woo', get_template_directory_uri().'/css/woo.css' );
+
 	// SlickJS CSS
 	wp_enqueue_style( 'slick-css', get_template_directory_uri().'/css/slick.css' );
 
@@ -271,6 +274,19 @@ require get_template_directory() . '/inc/extras.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// ===========================================
+// Woocommerce Filters
+// ===========================================
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_delimiter' );
+function jk_change_breadcrumb_delimiter( $defaults ) {
+	// Change the breadcrumb delimeter from '/' to '>'
+	$defaults['delimiter'] = ' - ';
+	return $defaults;
+}
+
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
 
 
 // ===========================================
