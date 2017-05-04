@@ -41,7 +41,7 @@ jQuery(document).ready(function($){ // Document Ready
 	.setTween(TweenMax.to('.parallax-bg', 1, {
 		y: '30%'
 	}))
-	.addIndicators()
+	// .addIndicators()
 	.addTo(fpController);
 
 
@@ -60,7 +60,7 @@ jQuery(document).ready(function($){ // Document Ready
 		autoAlpha: 0,
 		ease: Power3.easeOut
 	}, 0.32))
-	.addIndicators()
+	// .addIndicators()
 	.addTo(fpController);
 
 });
