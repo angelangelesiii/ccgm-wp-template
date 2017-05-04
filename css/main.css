@@ -1025,6 +1025,7 @@ a {
 	border-radius: 50%;
 	font-size: 0em;
 	opacity: 0.5;
+	padding: 0;
 }
 .featured-posts-carousel ul.slick-dots li.slick-active button {
 	opacity: 1;
