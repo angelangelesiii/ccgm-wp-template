@@ -367,6 +367,13 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
+.site-footer .footer-footer a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.site-footer .footer-footer a:hover {
+	text-decoration: underline;
+}
 
 /*Main Footer Menu*/
 .footer-nav {

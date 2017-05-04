@@ -38,7 +38,7 @@
 		<div class="footer-footer">
 			<div class="wrapper-medium">
 			
-			&copy; <?php echo date('Y'); ?> Christ Cares Global Ministries - Design by <strong>Zimit Media</strong>
+			&copy; <?php echo date('Y'); ?> Christ Cares Global Ministries - Design by <a href="http://zimitmedia.com"><strong>Zimit Media</strong></a>
 			
 			</div>
 		</div>
