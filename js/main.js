@@ -45,7 +45,7 @@ jQuery(document).ready(function($){ // Document Ready
 	var windowHeight = $(window).height(),
 		headerHeight = $('#ccgm-header').outerHeight(),
 		footerHeight = $('#colophon').outerHeight(),
-		mainHeight = $('main.site-main');
+		mainHeight = $('.site-content');
 
 	var minMainHeight = windowHeight - (headerHeight + footerHeight);
 
