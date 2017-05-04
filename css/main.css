@@ -49,14 +49,14 @@ body.page {
 }
 
 /*links*/
-.site-main a:link,
-.site-main a:visited {
+.site-content a:link,
+.site-content a:visited {
 	text-decoration: none;
 	color: #C24E4E;
 	outline: 0;
 }
-.site-main a:hover {
-	color: #E46060;
+.site-content a:hover {
+	color: #609BE4;
 	text-decoration: underline;
 	outline: 0;
 }
