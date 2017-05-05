@@ -198,7 +198,7 @@ function ccgm_scripts() {
 	if (is_front_page()) wp_enqueue_style( 'front', get_template_directory_uri().'/css/front.css' );
 
 	// Woocommerce
-	if (is_woocommerce() || is_page_template( 'templates/template-woocommerce' )) wp_enqueue_style( 'woo', get_template_directory_uri().'/css/woo.css' );
+	if (is_woocommerce() || is_page_template( 'templates/template-woocommerce.php' )) wp_enqueue_style( 'woo', get_template_directory_uri().'/css/woo.css' );
 
 	// SlickJS CSS
 	wp_enqueue_style( 'slick-css', get_template_directory_uri().'/css/slick.css' );
