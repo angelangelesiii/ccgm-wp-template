@@ -420,7 +420,8 @@ a {
 	transition: all 0.12s;
 }
 #ccgm-header .menu-container li.menu-item-has-children ul.sub-menu li:hover a {
-	background: #EDEDED;
+	background: #000000;
+	color: #FFFFFF;
 }
 
 /*Mobile Menu and Button*/
