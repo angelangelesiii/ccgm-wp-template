@@ -99,6 +99,19 @@ Author: Zimit Media
 .woocommerce .products-container .products .product h2:hover {
 	color: #3D7FD1;
 }
+.woocommerce .products-container .products .product .star-rating {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.woocommerce .products-container .products .product .star-rating::before,
+.woocommerce .products-container .products .product .star-rating span::before {
+	left: 50%;
+	transform: translateX(-50%);
+}
+.woocommerce .products-container .products .product .star-rating span::before {
+	color: #FFA200;
+}
 .woocommerce .products-container .products .product a.button,
 .single-product-container .related.products .product a.button {
 	border-radius: 18px;
@@ -274,6 +287,20 @@ Author: Zimit Media
 .single-product-container .related.products .product h2:hover {
 	color: #3D7FD1;
 }
+.single-product-container .comment-respond .comment-reply-title {
+	font-size: 1.15em;
+	font-weight: bold;
+	margin: 10px 0;
+	display: inline-block;
+}
+.single-product-container .comment-form-rating p.stars {
+	margin: 10px 0 !important;
+}
+.single-product-container .comment-form-rating p.stars a {
+	color: #FFA200;
+	font-size: 2em;
+	margin-right: 4px;
+}
 .single-product-container .post-edit-link {
 	margin-top: 30px;
 	display: inline-block;
@@ -288,6 +315,7 @@ Author: Zimit Media
 	background: #C7C7C7;
 	text-decoration: none;
 }
+
 
 
 /*==============================*/
