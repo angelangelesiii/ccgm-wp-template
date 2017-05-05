@@ -64,6 +64,13 @@ get_header(); ?>
 
 					</div>
 
+					<nav class="blog-navigation">
+						<?php 
+						// the_posts_navigation(); 
+						?>
+						<?php custom_numeric_posts_nav(); ?>
+					</nav>
+
 				<?php else : ?>
 
 
