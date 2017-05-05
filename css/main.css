@@ -1077,6 +1077,33 @@ a {
 
 
 /*==============================*/
+/* 404                          */
+/*==============================*/
+
+.error-404 {
+	text-align: center;
+	padding: 100px 0 100px;
+	background: #FFFFFF;
+}
+.error-404 .not-found-text {
+	font-size: 3em;
+	margin: 0;
+	font-weight: 900;
+}
+.error-404 p {
+	font-size: 1.4em;
+}
+.error-404 p.not-found-desc {
+	margin-top: 0;
+}
+.error-404 p.salvation {
+	font-size: 1.6em;
+	margin-top: 50px;
+	font-style: italic;
+}
+
+
+/*==============================*/
 /* MEDIA QUERIES                */
 /*==============================*/
 
