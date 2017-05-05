@@ -341,9 +341,10 @@ a {
 #ccgm-header .menu-container li.menu-item-has-children > a::after {
 	font-family: FontAwesome;
 	content: '\f078';
-	margin-left: 5px;
+	margin-left: 8px;
 	font-size: 0.5em;
 	display: inline-block;
+    transform: translateY(-2px);
 }
 #ccgm-header .menu-container li.menu-item-has-children ul.sub-menu {
 	position: absolute;
@@ -413,6 +414,10 @@ a {
 	font-size: 1em;
 	display: block;
 	border-radius: 4px;
+	background: #FFFFFF;
+	-webkit-transition: all 0.12s;
+	-o-transition: all 0.12s;
+	transition: all 0.12s;
 }
 #ccgm-header .menu-container li.menu-item-has-children ul.sub-menu li:hover a {
 	background: #EDEDED;
