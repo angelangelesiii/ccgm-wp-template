@@ -224,8 +224,34 @@ Author: Zimit Media
 	border: 1px solid #DBDBDB;
 	overflow: hidden;
 }
-.single-product-container .product-display {
+.single-product-container .product .product-display {
 	padding: 20px;
+}
+.single-product-container .product .product-display > .onsale {
+	top: 0;
+	right: 0;
+	left: auto;
+	bottom: auto;
+	border-radius: 0;
+	font-size: 	1.5em;
+	padding: 40px 100px 0;
+	line-height: 1em;
+	margin: -20px -97px 0 0;
+}
+.single-product-container .product .product-display  .price {
+	font-size: 2em;
+}
+.single-product-container .product .product-display .woocommerce-product-details__short-description {
+	font-size: 	1.1em;
+}
+.single-product-container .product .product-display .cart .button {
+	height: 42px;
+	border-radius: 8px;
+	background: #3D7FD1;
+	color: #FFFFFF;
+}
+.single-product-container .product .product-display .cart .button:hover {
+	background: #609BE4;
 }
 .woocommerce .single-product-container .product .woocommerce-tabs ul.tabs {
 	padding: 0 20px;
