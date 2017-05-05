@@ -65,4 +65,10 @@ jQuery(document).ready(function($){ // Document Ready
 		nextArrow: '<button class="carousel-button next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
 	});
 
+	$('.featured-posts-carousel').show();
+
+
+
+
+	
 });

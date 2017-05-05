@@ -913,8 +913,12 @@ a {
 /* FEATURED POSTS CAROUSEL      */
 /*==============================*/
 
+.featured-posts-carousel {
+	display: none;
+}
 .featured-posts {
 	position: relative;
+
 }
 .featured-posts h1.featured-title {
 	position: absolute;
