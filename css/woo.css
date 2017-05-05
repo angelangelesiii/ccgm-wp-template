@@ -76,6 +76,7 @@ Author: Zimit Media
     width: 23.5%;
     text-align: center;
     overflow: hidden;
+    min-height: 415px;
 }
 .woocommerce .products-container .products .product.last {
 	margin-right: 0 !important;
