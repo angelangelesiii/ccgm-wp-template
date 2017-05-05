@@ -27,9 +27,25 @@
 			<div class="wrapper-medium">
 				
 				<div class="row collapse">
+
 					<div class="column small-12 large-6">
+
 						<h2 class="footer-title">Christ Cares Global Ministries</h2>
+						<p class="address">1069 Kaligayan<br/> Quirino Highway, Quezon City<br/> Philippines 1124</p>
+
+						<div class="affiliates">
+							<a href="https://g12.co/en/"><img src="<?php echo get_template_directory_uri().'/images/branding/g12_logo.png' ?>" alt="" class="g12-logo affiliate-logo"></a>
+						</div>
 					</div>
+
+					<div class="column small-12 large-6">
+						<nav class="footer-2-nav">
+							<?php
+							wp_nav_menu( array( 'theme_location' => 'footer-menu-2', 'menu_id' => 'footer-small-menu', 'depth' => '1' ) );
+							?>
+						</nav>
+					</div>
+
 				</div>
 
 			</div>

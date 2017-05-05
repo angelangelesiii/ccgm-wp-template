@@ -453,6 +453,14 @@ a {
 	letter-spacing: 0.1em;
 	font-size: 1.6em;
 }
+.site-footer .content .affiliates {
+	margin-top: 20px;
+}
+.site-footer .content .affiliates .affiliate-logo {
+	height: 32px;
+	width: auto;
+	display: inline-block;
+}
 .site-footer .footer-footer {
 	padding: 10px 0;
 	color: #B4B4B4;
@@ -467,6 +475,7 @@ a {
 .site-footer .footer-footer a:hover {
 	text-decoration: underline;
 }
+
 
 /*Main Footer Menu*/
 .footer-nav {
@@ -494,6 +503,23 @@ a {
 	text-transform: uppercase;
 }
 #footer-nav-menu > li a:hover {
+	color: #FFFFFF;
+}
+
+/*Footer Vertical Menu*/
+#footer-small-menu {
+	margin: 15px 0;
+	padding: 0;
+	list-style-type: none;
+}
+#footer-small-menu li a {
+	color: #B4B4B4;
+	font-size: 0.9em;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+#footer-small-menu li a:hover {
 	color: #FFFFFF;
 }
 
