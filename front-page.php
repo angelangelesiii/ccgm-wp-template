@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<?php 
 		// Options for parallax background
-		$parallaxBG = 'background: none;';
+		$parallaxBG = 'background: url(\''.get_template_directory_uri().'/images/background/worship.jpg\')';
 		if (get_field('banner_background','options')) $parallaxBG = 'background: url(\''.get_field('banner_background','options').'\');';
 		?>
 
@@ -31,10 +31,25 @@ get_header(); ?>
 
 			<div class="overlay"></div>
 
+			<?php 
+
+			$bannerImage = get_template_directory_uri().'/images/display/salvation-is-here.png';
+			$bannerButtonText = 'Claim Your Salvation';
+			$bannerButtonLink = '#';
+
+			if(get_field('custom_banner','options')) : 
+
+				if(get_field('banner_image', 'options')) $bannerImage = get_field('banner_image', 'options');
+				if(get_field('button_text', 'options')) $bannerButtonText = get_field('button_text', 'options');
+				if(get_field('button_url', 'options')) $bannerButtonLink = get_field('button_url', 'options');
+
+			endif;
+			?>
+
 			<div class="content">
-				<img src="<?php echo get_template_directory_uri().'/images/display/salvation-is-here.png' ?>" alt="" class="banner-display">
+				<img src="<?php echo $bannerImage; ?>" alt="" class="banner-display">
 				<p class="text">
-					<a href="#" class="btn btn-transparent-white btn-expanding">Claim Your Salvation</a>
+					<a href="<?php echo $bannerButtonLink; ?>" class="btn btn-transparent-white btn-expanding"><?php echo $bannerButtonText; ?></a>
 				</p>
 			</div>
 
