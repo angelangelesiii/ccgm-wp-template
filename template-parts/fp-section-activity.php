@@ -38,7 +38,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<a href="#" class="btn btn-transparent-gray">View Events</a>
+					<a href="<?php the_field('link_to_events_page', 'options'); ?>" class="btn btn-transparent-gray">View Events</a>
 				</div>
 		
 			</div>

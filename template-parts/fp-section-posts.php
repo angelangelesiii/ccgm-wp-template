@@ -63,7 +63,7 @@
 
 	?>
 		
-		<a href="#" class="btn btn-transparent-gray">View more posts</a>
+		<a href="<?php echo get_permalink( get_option('page_for_posts' ) ); ?>" class="btn btn-transparent-gray">View more posts</a>
 
 	</div>
 
