@@ -716,6 +716,35 @@ a {
 	color: #FFFFFF;
 }
 
+/*Pagination*/
+.numbered-navigation ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	list-style-type: none;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.numbered-navigation ul li {
+	display: inline-block;
+	margin: 0 3px;
+}
+.numbered-navigation ul li.ellipses {
+	color: #C3C3C3;
+}
+.numbered-navigation ul li a {
+	display: block;
+	background: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #DBDBDB;
+	padding: 3px 10px;
+	text-decoration: none !important;
+}
+.numbered-navigation ul li a:hover {
+	background: #3D7FD1;
+	color: #FFFFFF;
+}
+
 
 /*==============================*/
 /* SINGLE POST                  */
