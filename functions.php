@@ -275,6 +275,11 @@ require get_template_directory() . '/inc/extras.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * Custom Paginated Navigation.
+ */
+require get_template_directory() . '/inc/paged-navigation.php';
+
 // ===========================================
 // Woocommerce Filters
 // ===========================================
