@@ -326,8 +326,8 @@ a {
 	-o-transition: all 0.25s;
 	transition: all 0.25s;
 }
-#ccgm-header.front-page.top-position .menu-container li.menu-item a::before {
-	background: #FFFFFF;
+#ccgm-header .menu-container li.menu-item.menu-item-has-children a::before {
+	display: none;
 }
 #ccgm-header .menu-container li.menu-item:hover > a::before {
 	width: 100%;
