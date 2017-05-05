@@ -69,6 +69,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 						 */
 						do_action( 'woocommerce_single_product_summary' );
 					?>
+
+					<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this product'); ?>
 			
 				</div><!-- .summary -->
 			</div>

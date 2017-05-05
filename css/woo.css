@@ -274,6 +274,20 @@ Author: Zimit Media
 .single-product-container .related.products .product h2:hover {
 	color: #3D7FD1;
 }
+.single-product-container .post-edit-link {
+	margin-top: 30px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 7px 12px;
+	background: #E8E8E8;
+	color: #555555 !important;
+	border-radius: 8px;
+	font-size: 0.9em;
+}
+.single-product-container .post-edit-link:hover {
+	background: #C7C7C7;
+	text-decoration: none;
+}
 
 
 /*==============================*/
