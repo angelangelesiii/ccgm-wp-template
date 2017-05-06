@@ -693,6 +693,11 @@ a {
 	margin: 0;
 	text-transform: uppercase;
 }
+.blog-area article.article-item .article-content .meta-date {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #A7A7A7;
+}
 .blog-area article.article-item .article-content p {
 	font-size: 1em;
 }

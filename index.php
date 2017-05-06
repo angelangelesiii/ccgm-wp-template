@@ -50,6 +50,7 @@ get_header(); ?>
 
 								<div class="article-content">
 									<h2 class="article-title"><?php the_title(); ?></h2>
+									<span class="meta-date"><?php echo get_the_date(); ?></span>
 									<?php the_excerpt(); ?>
 								</div>
 
