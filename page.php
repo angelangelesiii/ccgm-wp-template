@@ -38,7 +38,7 @@ get_header(); ?>
 					<div class="content">
 						<div class="wrapper">
 							<h1 class="page-title"><?php the_title(); ?></h1>
-							<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this'); ?>
+							<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this page'); ?>
 						</div>
 					</div>
 

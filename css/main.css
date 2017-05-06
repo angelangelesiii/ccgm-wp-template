@@ -799,6 +799,8 @@ a {
 .single-page-post article.post-article {
 	background: #FFFFFF;
 	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	overflow: hidden;
 }
 .single-page-post .article-header {
 	min-height: 400px;
