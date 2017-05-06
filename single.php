@@ -35,7 +35,7 @@ get_header(); ?>
 						<div class="content">
 							<h1 class="article-title"><?php the_title(); ?></h1>
 							<div class="article-meta">
-								<p>Written by <?php the_author(); ?> on <?php the_date(); ?></p>
+								<p>Written by <?php the_author(); ?> on <?php the_date(); ?> <?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this post'); ?></p>
 							</div>
 						</div>
 

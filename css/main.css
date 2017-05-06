@@ -836,6 +836,9 @@ a {
 	margin: 10px 0;
 	font-size: 0.9em;
 }
+.single-page-post .article-header .content .article-meta .post-edit-link {
+	color: #F2F2F2 !important;
+}
 .single-page-post .article-header .author-avatar {
 	display: block;
 	position: absolute;
