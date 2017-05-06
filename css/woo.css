@@ -367,6 +367,23 @@ Author: Zimit Media
 	max-width: 300px;
 }
 
+/*Login*/
+.woocommerce-account .u-column1,
+.woocommerce-account .u-column2 {
+	background: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #DBDBDB;
+	padding: 20px;
+}
+.woocommerce-account .u-column1 h2,
+.woocommerce-account .u-column2 h2 {
+	margin: 0 0 20px;
+}
+.woocommerce-account .u-column1 form,
+.woocommerce-account .u-column2 form {
+	margin: 0;
+}
+
 
 
 /*==============================*/
