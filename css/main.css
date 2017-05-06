@@ -424,6 +424,44 @@ a {
 	color: #FFFFFF;
 }
 
+/*User Box*/
+#ccgm-header .header-nav .user-box {
+	float: right;
+	display: inline-block;
+	height: 100%;
+	/*margin-right: 10px;*/
+}
+#ccgm-header .header-nav .user-box a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', 'Raleway', sans-serif;
+	font-size: 0.9em;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding: 19px 8px;
+	display: inline-block;
+	position: relative;
+	outline: 0;
+}
+#ccgm-header .header-nav .user-box a::before {
+	position: absolute;
+	display: block;
+	content: '';
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 4px;
+	width: 0;
+	background: #FFFFFF;
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+#ccgm-header .header-nav .user-box a:hover::before {
+	width: 100%;
+}
+
 /*Mobile Menu and Button*/
 .mobile-menu-button-container {
 	float: left;

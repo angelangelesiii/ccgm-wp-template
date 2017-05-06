@@ -52,7 +52,20 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 					<?php
 					wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'main-nav-menu', 'depth' => '2' ) );
 					?>
+
 				</div>
+
+				<?php if(is_user_logged_in()) : ?>
+				<div class="user-box">
+					<?php
+					if ( class_exists( 'WooCommerce' ) ) :
+					?>
+					<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="woocommerce-account-link">My Account</a>
+					<?php endif; ?>
+					<a href="<?php echo wp_logout_url(home_url()); ?>" class="header-logout-link">Logout</a>
+				</div>
+				<?php endif; ?>
+
 			</nav>
 		</div>
 	</header>
