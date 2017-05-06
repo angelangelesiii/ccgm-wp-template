@@ -43,7 +43,7 @@ get_header(); ?>
 
 					</header>
 					
-					<div class="article-content">
+					<div class="article-content clearfix">
 						<?php the_content(); ?>
 					</div>
 
