@@ -66,6 +66,15 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' ); // declare WooCommerce support
 }
 
+// disable strong password
+add_action( 'wp_print_scripts', 'DisableStrongPW', 100 );
+
+function DisableStrongPW() {
+    if ( wp_script_is( 'wc-password-strength-meter', 'enqueued' ) ) {
+        wp_dequeue_script( 'wc-password-strength-meter' );
+    }
+}
+
 // END WOOCOMMERCE SETUP
 
 
