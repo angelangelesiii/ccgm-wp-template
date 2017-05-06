@@ -43,7 +43,7 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 
 				<div class="logo-container clearfix">
 					<a href="<?php echo home_url(); ?>" class="clearfix">
-						<img src="<?php echo get_template_directory_uri().'/images/branding/logo-boxed-white.png' ?>" alt="Logo" class="logo">
+						<img src="<?php echo get_template_directory_uri().'/images/branding/logo-boxed-white-small.png' ?>" alt="Logo" class="logo">
 						<h1>CCGM</h1>
 					</a>
 				</div>

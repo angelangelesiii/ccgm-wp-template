@@ -34,7 +34,7 @@
 						<p class="address">1069 Kaligayan<br/> Quirino Highway, Quezon City<br/> Philippines 1124</p>
 
 						<div class="affiliates">
-							<a href="https://g12.co/en/"><img src="<?php echo get_template_directory_uri().'/images/branding/g12_logo.png' ?>" alt="" class="g12-logo affiliate-logo"></a>
+							<a href="https://g12.co/en/"><img src="<?php echo get_template_directory_uri().'/images/branding/g12_logo-small.png' ?>" alt="" class="g12-logo affiliate-logo"></a>
 						</div>
 					</div>
 
