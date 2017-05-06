@@ -1018,6 +1018,73 @@ a {
 }
 
 
+/*==============================*/
+/* COMMENTS                     */
+/*==============================*/
+
+.comments-container {
+	background: #FFFFFF;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	/*overflow: hidden;*/
+	padding: 20px;
+}
+.comments-area > .comment-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.comments-area .comment-list li.comment.depth-1 {
+	padding: 20px 10px;
+	border-bottom: 1px solid #E1E1E1;
+}
+.comments-area .comment-list .comment-author {
+	font-size: 1.1em;
+}
+.comments-area .comment-list .comment-author .avatar {
+	overflow: hidden;
+	display: block;
+	border-radius: 4px;
+	float: left;
+	margin-right: 10px;
+}
+.comments-area .comment-list .comment-metadata a {
+	color: #8F8F8F;
+	font-size: 0.9em;
+}
+.comments-area .comment-list .children {
+	border-left: 4px solid #E1E1E1;
+	padding: 0;
+	margin-left: 40px;
+}
+.comments-area .comment-list .comment-body {
+	padding: 20px;
+}
+.comments-area .comment-list .comment-reply-link {
+	display: inline-block;
+	padding: 3px 7px;
+	background: #E1E1E1;
+	border-radius: 8px;
+	text-decoration: none !important;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+.comments-area .comment-list .comment-reply-link:hover {
+	background: #3D7FD1;
+	color: #FFFFFF
+}
+.comments-area h2.comments-title {
+	margin: 15px 0 0;
+}
+.comments-area .comment-respond {
+	padding: 20px;
+}
+.comments-area .comment-form label {
+	min-width: 65px;
+	display: inline-block;
+}
+
+
 
 /*==============================*/
 /* FEATURED POSTS CAROUSEL      */
