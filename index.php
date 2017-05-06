@@ -46,6 +46,7 @@ get_header(); ?>
 
 								<a href="<?php the_permalink(); ?>" class="article-thumbnail-container">
 									<div class="article-thumbnail" <?php echo $thumbnailCSS; ?>></div>
+									<div class="overlay"></div>
 								</a>
 
 								<div class="article-content">
