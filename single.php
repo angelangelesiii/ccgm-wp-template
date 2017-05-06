@@ -49,6 +49,19 @@ get_header(); ?>
 
 				</article>
 
+				<section class="comments-container" id="single-page-comments">
+					
+					<div class="content">
+					<?php
+					// GET COMMENTS IF THERE'S ANY
+					if ( comments_open() || get_comments_number() ) :
+						comments_template();
+					endif; 
+					?>
+					</div>
+
+				</section>
+
 			</div>
 
 		<?php endwhile; ?>
