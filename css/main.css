@@ -21,6 +21,9 @@ body.page,
 body.single-event {
 	background: #FFFFFF;
 }
+body.mobile-menu-open {
+	overflow: hidden;
+}
 
 ::selection {
 	background: rgba(226, 128, 0, 0.85);
@@ -472,13 +475,42 @@ a {
 	float: left;
 }
 .mobile-menu-button {
-	background: none;
+	background: none !important;
 	border: none;
 	outline: none;
 	color: #FFFFFF;
 	font-size: 1.7em;
 	padding: 5px;
 	margin: 11px 20px 0 5px;
+}
+.mobile-menu-overlay { /*Main mobile menu overlay*/
+	position: fixed;
+	background: #000000;
+	opacity: 0.65;
+	z-index: 10100;
+	height: 100vh;
+	width: 100%;
+	content: '';
+	display: none;
+}
+.mobile-menu-box { /*Main mobile menu box*/
+	position: fixed;
+	background: #FFFFFF;
+	z-index: 10101;
+	height: 100vh;
+	width: 85%;
+	max-width: 500px;
+	-webkit-box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	box-shadow: 0 0 100px rgba(0,0,0,0.5);
+	/*display: none;*/
+	left: -100%;
+	overflow-y: scroll;
+}
+.mobile-menu-box a {
+	color: #555555 !important;
+}
+.mobile-menu-box .mobile-menu-button {
+	color: #555555;
 }
 
 

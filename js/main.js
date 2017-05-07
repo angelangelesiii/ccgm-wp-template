@@ -32,6 +32,77 @@ jQuery(document).ready(function($){ // Document Ready
 
 
 	// ===================================================
+	//  Mobile Menu Box Toggling
+	// ===================================================
+
+	var mobileOverlay = $('header .mobile-menu-overlay'),
+		mobileBox = $('header .mobile-menu-box');
+
+	// Declare timelines for opening and closing of mobile menu
+	var openMobile = new TimelineMax({
+		paused: false
+	});
+	var closeMobile = new TimelineMax({
+		// After animation for closing, hide the menu and overlay boxes
+		// and remove overflow: hidden property of body.
+		onComplete: function(e) {
+			console.log('run!');
+			mobileBox.hide();
+			mobileOverlay.hide();
+			$('body').removeClass('mobile-menu-open');
+		}
+	});
+
+	// Define animations for opening mobile menu
+	openMobile
+		.from(mobileOverlay, 0.5, {
+			autoAlpha: 0,
+			ease: Power3.easeOut
+		}, 'a')
+		.to(mobileBox, 0.5, {
+			left: 0,
+			ease: Power3.easeOut
+		}, 'a')
+		.pause()
+		;
+
+	// Define animations for closing mobile menu
+	closeMobile
+		.to(mobileOverlay, 0.5, {
+			autoAlpha: 0,
+			ease: Power3.easeOut
+		}, 'a')
+		.to(mobileBox, 0.5, {
+			left: '-100%',
+			ease: Power3.easeOut
+		}, 'a')
+		.pause()
+		;
+
+	var openButton = $('.mobile-menu-button.open-menu-button'),
+		closeButton = $('.mobile-menu-button.close-menu-button');
+
+	// Do these when open button is clicked.
+	openButton.click(function(e){
+		$('body').addClass('mobile-menu-open');
+		mobileBox.show();
+		mobileBox.scrollTop(0);
+		mobileOverlay.show();
+		openMobile.play(0);
+	});
+
+	// Do these when close button or overlay (shadow outside
+	// the menu) is clicked.
+	closeButton.click(function(e) {
+		closeMobile.play(0);
+	});
+	mobileOverlay.click(function(e) {
+		closeMobile.play(0);
+	});
+
+
+
+	// ===================================================
 	//  Header Spacer for not front-page pages
 	// ===================================================
 

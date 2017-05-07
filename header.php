@@ -30,6 +30,7 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 </head>
 
 <body <?php body_class($fpClass); ?>>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ccgm' ); ?></a>
 
@@ -38,7 +39,7 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 			<nav class="header-nav .clearfix">
 
 				<div class="mobile-menu-button-container hide-for-large">
-					<button class="mobile-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<button class="mobile-menu-button open-menu-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 				</div>
 
 				<div class="logo-container clearfix">
@@ -56,7 +57,7 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 				</div>
 
 				<?php if(is_user_logged_in()) : ?>
-				<div class="user-box">
+				<div class="user-box show-for-large">
 					<?php
 					if ( class_exists( 'WooCommerce' ) ) :
 					?>
@@ -68,6 +69,40 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 
 			</nav>
 		</div>
+
+		<div class="mobile-menu-overlay hide-for-large"></div>
+
+		<nav class="mobile-menu-box hide-for-large">
+			<div class="wrapper">
+
+				<button class="mobile-menu-button close-menu-button"><i class="fa fa-close" aria-hidden="true"></i></button>
+
+				<div class="menu-container">
+
+					<?php // Main Menu
+					wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'mobile-nav-menu', 'depth' => '2' ) );
+					?>
+
+					<?php // If user is logged in
+					if(is_user_logged_in()) : ?>
+					<div class="user-box">
+						<?php
+						if ( class_exists( 'WooCommerce' ) ) :
+						?>
+						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="woocommerce-account-link">My Account</a>
+						<?php endif; ?>
+						<a href="<?php echo wp_logout_url(home_url()); ?>" class="header-logout-link">Logout</a>
+					</div>
+					<?php endif; ?>
+
+					<p>lorem600</p>
+
+				</div>
+
+
+			</div>
+		</nav>
+
 	</header>
 
 	<?php if(!is_front_page()) : ?>
