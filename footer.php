@@ -28,7 +28,7 @@
 				
 				<div class="row collapse">
 
-					<div class="column small-12 large-6">
+					<div class="column small-12 medium-7 large-6">
 
 						<h2 class="footer-title">Christ Cares Global Ministries</h2>
 						<p class="address">1069 Kaligayan<br/> Quirino Highway, Quezon City<br/> Philippines 1124</p>
@@ -38,7 +38,7 @@
 						</div>
 					</div>
 
-					<div class="column small-12 large-6">
+					<div class="column small-12 medium-5 large-6">
 						<nav class="footer-2-nav">
 							<?php
 							wp_nav_menu( array( 'theme_location' => 'footer-menu-2', 'menu_id' => 'footer-small-menu', 'depth' => '1' ) );
