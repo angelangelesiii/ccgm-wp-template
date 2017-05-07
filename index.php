@@ -32,7 +32,7 @@ get_header(); ?>
 				<div class="column article-column blog-column small-12">
 				<?php if(have_posts()) : ?>
 
-					<div class="row large-up-4 medium-up-3 small-up-1">
+					<div class="row large-up-4 medium-up-2 small-up-1">
 
 					<?php while(have_posts()) : the_post(); // Start Loop?>
 
