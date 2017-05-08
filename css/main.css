@@ -1380,9 +1380,112 @@ article.template-custom-page .page-content {
 SMALL ONLY <640px
 */
 @media screen and (max-width: 39.9375em) {
+	a.btn {
+		padding: 11px 25px;
+		border-radius: 24px;
+	}
+	a.btn.btn-expanding:hover {
+		padding: 11px 30px;
+	}
+
+	/*Mobile Menu Box*/
+	.mobile-menu-box {
+		width: 80%;
+		max-width: 350px;
+	}
+	
+	/*Recent Posts Section*/
+	.recent-posts {
+		padding: 30px 0;
+	}
+	.recent-posts h2.section-title {
+		font-size: 2em;
+	}
+	.recent-posts .posts-strip {
+		margin: 20px 0 0;
+	}
+
 	/*Activity Section*/
+	.activity-info {
+		padding: 30px 0;
+	}
+	.activity-info h2 {
+		font-size: 2em;
+		margin: 0 0 20px;
+	}
 	.activity-info .location {
 		padding: 0 10px !important;
+	}
+
+	/*Featured Posts Carousel*/
+	.featured-posts h1.featured-title {
+		font-size: 0.9em;
+	}
+	.featured-posts .featured-post .content h2.post-title {
+		font-size: 2em;
+		line-height: 1.2em;
+	}
+	.featured-posts .featured-post .content .excerpt {
+		font-size: 1em;
+		margin-top: 20px;
+	}
+	.featured-posts-carousel .carousel-button {
+		display: none;
+	}
+	.featured-posts-carousel ul.slick-dots li button {
+		height: 13px;
+		width: 13px;
+	}
+
+	/*Blog Search Box*/
+	.main-search-form .searchform {
+		border-radius: 21px;
+	}
+	.main-search-form .searchform .searchbox {
+		padding: 10px 20px;
+		font-size: 0.9em;
+	}
+	.main-search-form .searchform #searchsubmit {
+		padding: 0 10px;
+		font-size: 0.9em;
+	}
+
+	/*Events Table*/
+	.page-article .css-events-list table.events-table {
+		font-size: 1rem;
+	}
+
+	/*Page*/
+	.page-article .page-header {
+		min-height: 90px;
+	}
+	.page-article .page-header .content h1 {
+		font-size: 2.3em;
+		margin: 0 0 10px;
+	}
+	.page-article .page-content {
+		padding-top: 10px;
+	}
+
+	/*Woocommerce*/
+	.shop-bar {
+		margin: 0 0 20px !important;
+	}
+	.woocommerce-products-header {
+		margin-bottom: 20px !important;
+	}
+	.woocommerce-products-header .woocommerce-breadcrumb {
+		font-size: 0.9em !important;
+	}
+	.woocommerce-products-header h1 {
+		font-size: 2.3em !important;
+		margin: 20px 0 0 !important;
+	}
+	.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
+		float: left;
+	}
+	.woocommerce .products-container .products .product {
+		margin-bottom: 20px !important;
 	}
 }
 
