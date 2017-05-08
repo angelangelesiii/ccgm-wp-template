@@ -1097,6 +1097,14 @@ a {
 	border-left: 3px solid #CCCCCC;
 }
 
+/*Custom Page Template*/
+article.template-custom-page {
+	margin: 0;
+}
+article.template-custom-page .page-content {
+	margin: 0;
+}
+
 
 /*==============================*/
 /* COMMENTS                     */
