@@ -18,10 +18,20 @@ get_header(); ?>
 		<main id="main" class="site-main blog-area" role="main">
 
 		<div class="wrapper-medium">
-
+			
+			<?php 
+			// get current page we are on. If not set we can assume we are on page 1.
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			// are we on page one?
+			if(1 == $paged) :
+			    //true
+			?>
+		
 			<div class="wrapper-medium">
 			<?php get_template_part( 'template-parts/featured-posts' ); ?>
 			</div>
+
+			<?php endif; ?>
 
 			<div class="wrapper">
 			<?php get_template_part( 'template-parts/search-template' ); ?>
