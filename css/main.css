@@ -1226,6 +1226,7 @@ article.template-custom-page .page-content {
 	top: 50%;
 	width: 100%;
 	transform: translateY(-50%);
+	padding: 0 30px;
 }
 .featured-posts .featured-post .content h2.post-title {
 	font-size: 2.4em;
@@ -1449,12 +1450,15 @@ SMALL ONLY <640px
 		font-size: 2em;
 		line-height: 1.2em;
 	}
+	.featured-posts .featured-post .content {
+		padding: 0 10px;
+	}
 	.featured-posts .featured-post .content .excerpt {
 		font-size: 1em;
 		margin-top: 20px;
 	}
 	.featured-posts-carousel .carousel-button {
-		display: none;
+		display: none !important;
 	}
 	.featured-posts-carousel ul.slick-dots li button {
 		height: 13px;
