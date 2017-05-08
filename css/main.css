@@ -504,7 +504,8 @@ a {
 	box-shadow: 0 0 100px rgba(0,0,0,0.5);
 	/*display: none;*/
 	left: -100%;
-	overflow-y: scroll;
+	overflow-y: auto;
+	padding-bottom: 50px;
 }
 .mobile-menu-box a {
 	color: #555555 !important;
@@ -512,7 +513,47 @@ a {
 .mobile-menu-box .mobile-menu-button {
 	color: #555555;
 }
-
+#ccgm-header .mobile-menu-box .mobile-menu-container .mobile-ul {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container .mobile-ul .sub-menu {
+	margin: 0;
+	padding: 0;
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container .mobile-ul .sub-menu li a {
+	padding: 8px 30px 8px 60px;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container .mobile-ul li {
+	display: block;
+	width: 100%;
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container .mobile-ul li.menu-item-has-children > a::after {
+	font-family: FontAwesome;
+	content: '\f078';
+	margin-left: 8px;
+	font-size: 0.5em;
+	display: inline-block;
+    transform: translateY(-2px);
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container li.menu-item a {
+	/*border-bottom: 1px solid #DBDBDB;*/
+	display: block;
+	text-decoration: none;
+	padding: 13px 30px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#ccgm-header .mobile-menu-box .mobile-menu-container li.menu-item a:hover {
+	background: #F2F2F2;
+}
+#ccgm-header .mobile-menu-box .user-box {
+	border-top: 1px solid #DBDBDB;
+}
 
 /* ========================================= */
 /* FOOTER                                    */

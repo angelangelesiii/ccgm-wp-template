@@ -69,7 +69,8 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 
 			</nav>
 		</div>
-
+		
+		<!-- MOBILE MENU -->
 		<div class="mobile-menu-overlay hide-for-large"></div>
 
 		<nav class="mobile-menu-box hide-for-large">
@@ -77,31 +78,50 @@ if(is_woocommerce()) $fpClass .= ' shop-page';
 
 				<button class="mobile-menu-button close-menu-button"><i class="fa fa-close" aria-hidden="true"></i></button>
 
-				<div class="menu-container">
+			</div>
+
+			<div class="mobile-menu-container">
+
+				<ul class="mobile-ul">
+					<li class="menu-item"><a href="<?php echo home_url(); ?>">Home</a></li>
+				</ul>
+
+				<?php // Main Menu
+				wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'mobile-nav-menu', 'depth' => '2', 'menu_class' => 'mobile-ul' ) );
+				?>
+
+				<?php // If user is logged in
+				if(is_user_logged_in()) : ?>
+				<div class="user-box">
 
 					<?php // Main Menu
-					wp_nav_menu( array( 'theme_location' => 'header-menu-1', 'menu_id' => 'mobile-nav-menu', 'depth' => '2' ) );
+					wp_nav_menu( array( 'theme_location' => 'woocommerce-menu', 'menu_id' => 'mobile-woo-menu', 'depth' => '2', 'menu_class' => 'mobile-ul' ) );
 					?>
+					
+					<ul class="user-menu mobile-ul">
+						<li class="user-menu-item menu-item">
 
-					<?php // If user is logged in
-					if(is_user_logged_in()) : ?>
-					<div class="user-box">
-						<?php
-						if ( class_exists( 'WooCommerce' ) ) :
-						?>
-						<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="woocommerce-account-link">My Account</a>
-						<?php endif; ?>
-						<a href="<?php echo wp_logout_url(home_url()); ?>" class="header-logout-link">Logout</a>
-					</div>
-					<?php endif; ?>
+							<?php
+							if ( class_exists( 'WooCommerce' ) ) :
+							?>
+							<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" class="woocommerce-account-link">My Account</a>
+							<?php endif; ?>
 
-					<p>lorem600</p>
+						</li>
+						<li class="user-menu-item menu-item">
+							
+							<a href="<?php echo wp_logout_url(home_url()); ?>" class="header-logout-link">Logout</a>
 
+						</li>
+					</ul>
+					
 				</div>
-
+				<?php endif; ?>
 
 			</div>
+
 		</nav>
+		<!-- END MOBILE MENU -->
 
 	</header>
 
