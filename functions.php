@@ -289,6 +289,12 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/paged-navigation.php';
 
+/**
+ * Remove parent menu links
+ */
+require get_template_directory() . '/inc/parent-menu-remove-links.php';
+
+
 // ===========================================
 // Woocommerce Filters
 // ===========================================
