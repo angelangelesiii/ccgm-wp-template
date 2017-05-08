@@ -1400,6 +1400,9 @@ MEDIUM BELOW <1024px
 		transform: inherit;
 		margin: 0;
 	}
+	#ccgm-header .logo-container {
+		margin: 0;
+	}
 
 	/*Activity Section*/
 	.activity-info .schedule {
