@@ -1388,6 +1388,30 @@ SMALL ONLY <640px
 		padding: 11px 30px;
 	}
 
+	/*Footer*/
+	#colophon {
+		font-size: 0.9rem;
+	}
+	#footer-nav-menu {
+		text-align: center;
+	}
+	#footer-nav-menu > li {
+		padding: 5px;
+	}
+	#footer-nav-menu > li:nth-of-type(1) {
+		padding: 5px;
+	}
+	#colophon .content .column {
+		text-align: center;
+	}
+	.site-footer .footer-footer {
+		padding: 10px 40px;
+		text-align: center;
+	}
+	.site-footer .content {
+		padding: 15px;
+	}
+
 	/*Mobile Menu Box*/
 	.mobile-menu-box {
 		width: 80%;
@@ -1455,6 +1479,27 @@ SMALL ONLY <640px
 		font-size: 1rem;
 	}
 
+	/*Posts*/
+	.single-page-post {
+		padding: 20px 0;
+	}
+	.single-page-post .article-header .search-form {
+		right: auto;
+		top: 15px;
+		width: 100%;
+		padding: 0 10px;
+	}
+	.single-page-post .article-header .search-form .searchform button {
+		padding: 0 15px;
+	}
+	.single-page-post .article-header .content {
+		padding: 10px 0 10px 10px;
+		width: 75%;
+	}
+	.single-page-post .article-content {
+		padding: 20px 15px;
+	}
+
 	/*Page*/
 	.page-article .page-header {
 		min-height: 90px;
@@ -1463,8 +1508,20 @@ SMALL ONLY <640px
 		font-size: 2.3em;
 		margin: 0 0 10px;
 	}
+	.page-article .page-header .content a.post-edit-link {
+		font-size: 0.65em;
+		padding: 5px;
+	}
 	.page-article .page-content {
 		padding-top: 10px;
+	}
+
+	/*Comments*/
+	.comments-container {
+		padding: 20px 15px;
+	}
+	.comments-area .comment-list .comment-body {
+		padding: 20px 10px;
 	}
 
 	/*Woocommerce*/
