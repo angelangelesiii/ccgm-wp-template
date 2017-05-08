@@ -46,7 +46,7 @@ get_header(); ?>
 
 					<?php while(have_posts()) : the_post(); // Start Loop?>
 
-						<article class="column column-block article-item articleID-<?php the_id(); ?>">
+						<article <?php post_class( array( 'column', 'column-block', 'article-item' ) ); ?>>
 							<div class="article-box">
 
 								<?php // For post thumbnail
