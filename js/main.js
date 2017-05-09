@@ -151,4 +151,10 @@ jQuery(document).ready(function($){ // Document Ready
 	$('.featured-posts-carousel').show();
 
 
+	// ===================================================
+	//  Siteorigin Parallax Fix
+	// ===================================================
+
+	// $('.panel-row-style[data-siteorigin-parallax]').css('background-attachment','fixed');
+	// $('.lsow-parallax-bg').css('background-attachment','fixed');
 });
