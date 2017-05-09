@@ -85,7 +85,9 @@ get_header(); ?>
 
 				<?php else : ?>
 
-
+				<div class="wrapper">
+					<h1 class="no-entries-title">There are no entries yet</h1>
+				</div>
 
 				<?php endif; ?>
 				</div>
