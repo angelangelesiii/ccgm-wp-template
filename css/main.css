@@ -1021,6 +1021,10 @@ a {
 	margin: 0 0 20px;
 	display: inline-block;
 }
+.page-article.search-results .page-header .content h1 {
+	font-size: 2em;
+	line-height: 1.2em;
+}
 .page-article .page-header .content a.post-edit-link {
 	color: #FFFFFF;
 	display: inline-block;
@@ -1356,6 +1360,44 @@ article.template-custom-page .page-content {
 
 
 /*==============================*/
+/* SEARCH RESULTS               */
+/*==============================*/
+
+.search-results.wrapper {
+	margin-bottom: 40px;
+}
+.search-results.wrapper .search-result .title {
+	margin: 0;
+}
+.search-results.wrapper .search-result .excerpt {
+	margin: 0;
+}
+.search-results.wrapper .search-result .excerpt .entry-date {
+	color: #939393;
+}
+.search-results.wrapper article.search-result {
+	margin: 20px 0;
+	background: #FFFFFF;
+	border-radius: 3px;
+	border: 1px solid #DBDBDB;
+	padding: 20px;
+
+}
+.search-results.wrapper .blog-navigation {
+	margin: 40px 0;
+}
+
+
+/*==============================*/
+/* ARCHIVE                      */
+/*==============================*/
+
+.blog-area.archive-area {
+	margin: 0 0 40px;
+}
+
+
+/*==============================*/
 /* 404                          */
 /*==============================*/
 
@@ -1556,6 +1598,15 @@ SMALL ONLY <640px
 	}
 	.woocommerce .products-container .products .product {
 		margin-bottom: 20px !important;
+	}
+
+	/*Search results*/
+	.page-article.search-results .page-header .content h1 {
+		font-size: 1.6em;
+	}
+	.search-results .main-search-form,
+	.blog-area .main-search-form {
+		margin: 20px 0;
 	}
 }
 
