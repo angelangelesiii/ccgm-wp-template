@@ -1153,7 +1153,30 @@ article.template-custom-page {
 }
 article.template-custom-page .page-content {
 	margin: 0;
+	padding: 0;
+	min-height: 500px;
 }
+article.template-custom-page .edit-link-container a.post-edit-link {
+	display: block;
+	background: #3D7FD1;
+	color: #FFFFFF;
+	text-decoration: none !important;
+	padding: 5px 10px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 10001;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.2em;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+article.template-custom-page .edit-link-container a.post-edit-link:hover {
+	background: #98BAE5;
+}
+
 
 
 /*==============================*/
