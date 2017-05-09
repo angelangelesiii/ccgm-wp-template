@@ -59,7 +59,12 @@ if (get_field('font_color')) $fontColor = 'style="color: '.get_field('font_color
 				
 				</header>
 
-				<div class="no-wrapper">
+				<?php 
+				$useWrapper = 'no-';
+				if (get_field('use_wrapper')) $useWrapper = '';
+				?>
+
+				<div class="<?php echo $useWrapper; ?>wrapper">
 
 					<div class="page-content" <?php echo $fontColor; ?>>
 						<?php if(get_the_content()):
