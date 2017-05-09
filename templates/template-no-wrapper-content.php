@@ -59,28 +59,26 @@ if (get_field('font_color')) $fontColor = 'style="color: '.get_field('font_color
 				
 				</header>
 
-				<div class="no-wrapper">
+				<?php else : ?>	
+					<div class="edit-link-container">
+						<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i>'); ?>
+					</div>
+				<?php endif; ?>
+
+				<?php 
+				$useWrapper = 'no-';
+				if (get_field('use_wrapper')) $useWrapper = '';
+				?>
+
+				<div class="<?php echo $useWrapper; ?>wrapper">
 
 					<div class="page-content" <?php echo $fontColor; ?>>
-						<?php if(get_the_content()):
-							the_content();
-						else:
-						?>
-						<p class="no-content-found">
-							Coming Soon!
-						</p>
-						<?php endif; ?>
+						<?php the_content(); ?>
 					</div>
 				
 				</div>
 
 			</article>
-
-			<?php else : ?>	
-				<div class="wrapper edit-link-container">
-					<?php edit_post_link('<i class="fa fa-pencil" aria-hidden="true"></i> Edit this'); ?>
-				</div>
-			<?php endif; ?>
 
 		<?php endwhile; ?>
 		

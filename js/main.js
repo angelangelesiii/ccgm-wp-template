@@ -101,6 +101,18 @@ jQuery(document).ready(function($){ // Document Ready
 	});
 
 
+	// ===================================================
+	//  Mobile Menu Box Item On Click Open Submenu
+	// ===================================================
+
+	// Mobile menu list item with children link selector
+	var itemEl = $('#ccgm-header .mobile-menu-box li.menu-item.menu-item-has-children > a');
+
+	// Click on the link then add class "open-submenu" to its parent li.menu-item
+	itemEl.click(function(e){
+		$(this).parent().toggleClass('open-submenu');
+	});
+
 
 	// ===================================================
 	//  Header Spacer for not front-page pages
@@ -139,7 +151,10 @@ jQuery(document).ready(function($){ // Document Ready
 	$('.featured-posts-carousel').show();
 
 
+	// ===================================================
+	//  Siteorigin Parallax Fix
+	// ===================================================
 
-
-	
+	// $('.panel-row-style[data-siteorigin-parallax]').css('background-attachment','fixed');
+	// $('.lsow-parallax-bg').css('background-attachment','fixed');
 });

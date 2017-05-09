@@ -10,42 +10,89 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main blog-area archive-area" role="main">
 
-		<?php
-		if ( have_posts() ) : ?>
+			<div class="page-article search-results">
+				<header class="page-header">
+					<div class="content">
+						<div class="wrapper">
+							<h1 class="page-title"><?php the_archive_title(); ?></h1>
+						</div>
+					</div>
+				</header><!-- .page-header -->
+			</div>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+			<div class="wrapper-medium">
+				
+				<div class="wrapper">
+				<?php get_template_part( 'template-parts/search-template' ); ?>
+				</div>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+				<div class="row">
+					
+					<div class="column article-column blog-column small-12">
+					<?php if(have_posts()) : ?>
 
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
+						<div class="row large-up-4 medium-up-2 small-up-1">
 
-			endwhile;
+						<?php while(have_posts()) : the_post(); // Start Loop?>
 
-			the_posts_navigation();
+							<article <?php post_class( array( 'column', 'column-block', 'article-item' ) ); ?>>
+								<div class="article-box">
 
-		else :
+									<?php // For post thumbnail
+									$thumbnailCSS = '';
+									if(has_post_thumbnail()) $thumbnailCSS = 'style="background-image: url(\''.get_the_post_thumbnail_url().'\')"'
+									?>
 
-			get_template_part( 'template-parts/content', 'none' );
+									<a href="<?php the_permalink(); ?>" class="article-thumbnail-container">
+										<div class="article-thumbnail" <?php echo $thumbnailCSS; ?>></div>
+										<div class="overlay"></div>
+									</a>
 
-		endif; ?>
+									<div class="article-content">
+										<h2 class="article-title"><?php the_title(); ?></h2>
+										<span class="meta-date"><?php echo get_the_date(); ?></span>
+										<?php the_excerpt(); ?>
+									</div>
+
+									<footer class="article-footer">
+										<a href="<?php the_permalink(); ?>" class="read-more">Read Full</a>
+									</footer>
+
+								</div>
+							</article>
+
+						<?php endwhile; // End Loop ?>
+
+						</div>
+
+						<nav class="blog-navigation">
+							<?php 
+							// the_posts_navigation(); 
+							?>
+							<?php custom_numeric_posts_nav(); ?>
+						</nav>
+
+					<?php else : ?>
+
+					<div class="wrapper">
+						<h1 class="no-entries-title">There are no entries yet</h1>
+					</div>
+
+					<?php endif; ?>
+					</div>
+
+					<div class="widget-column">
+						<?php // get_sidebar(); ?>
+					</div>
+
+				</div>
+				
+			</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
