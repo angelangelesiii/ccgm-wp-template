@@ -318,8 +318,8 @@ a {
 #ccgm-header .menu-container li.menu-item.current_page_parent a,
 #ccgm-header .menu-container li.menu-item.current-page-ancestor a {
 	/*color: #A9CBF5;*/
-	color: #3D7FD1;
-	font-weight: bold;
+	/*color: #3D7FD1;*/
+	/*font-weight: bold;*/
 }
 #ccgm-header .menu-container li.menu-item a::before {
 	position: absolute;
