@@ -16,6 +16,6 @@ if (get_field('welcome_button_link', 'options')) $welcomeLinkUrl = get_field('we
 	<div class="content wrapper">
 		<h2 class="welcome-text"><span class="Christ">Christ</span> <span class="changing"></span></h2>
 		<div class="context"><?php echo $welcomeText; ?></div>
-		<a href="<?php echo $welcomeLinkUrl ?>" class="btn btn-transparent-gray btn-expanding"><?php echo $welcomeLinkText ?></a>
+		<a href="<?php echo $welcomeLinkUrl ?>" class="btn btn-transparent-gray"><?php echo $welcomeLinkText ?></a>
 	</div>
 </section>

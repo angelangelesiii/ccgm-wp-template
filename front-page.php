@@ -49,7 +49,7 @@ get_header(); ?>
 			<div class="content">
 				<img src="<?php echo $bannerImage; ?>" alt="" class="banner-display">
 				<p class="text">
-					<a href="<?php echo $bannerButtonLink; ?>" class="btn btn-transparent-white btn-expanding"><?php echo $bannerButtonText; ?></a>
+					<a href="<?php echo $bannerButtonLink; ?>" class="btn btn-transparent-white"><?php echo $bannerButtonText; ?></a>
 				</p>
 			</div>
 
