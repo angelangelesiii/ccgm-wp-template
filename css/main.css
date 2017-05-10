@@ -640,6 +640,28 @@ a {
 	color: #FFFFFF;
 }
 
+/*Footer Social Links*/
+#colophon .social-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 10px 0;
+}
+#colophon .social-links .social-link {
+	display: inline-block;
+}
+#colophon .social-links .social-link a {
+	font-size: 1rem;
+}
+#colophon .social-links .social-link a.fa-stack .fa-stack-1x {
+	color: #000000;
+}
+#colophon .social-links .social-link a.fa-stack .fa-circle {
+	color: #B4B4B4;
+}
+#colophon .social-links .social-link a.fa-stack:hover .fa-circle {
+	color: #FFFFFF;
+}
+
 /*Footer Vertical Menu*/
 #footer-small-menu {
 	margin: 15px 0;

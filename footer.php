@@ -45,6 +45,62 @@
 							<?php
 							wp_nav_menu( array( 'theme_location' => 'footer-menu-2', 'menu_id' => 'footer-small-menu', 'depth' => '1' ) );
 							?>
+
+							<ul class="social-links">
+								<?php if(get_field('facebook_url','options')) : ?>
+								<li class="social-link facebook-link">
+									<a href="<?php the_field('facebook_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-facebook fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;
+								if(get_field('twitter_url','options')) : 
+								?>
+								<li class="social-link twitter-link">
+									<a href="<?php the_field('twitter_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-twitter fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;
+								if(get_field('instagram_url','options')) : 
+								?>
+								<li class="social-link instagram-link">
+									<a href="<?php the_field('instagram_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-instagram fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;
+								if(get_field('google_plus_url','options'))  :
+								?>
+								<li class="social-link google-plus-link">
+									<a href="<?php the_field('google_plus_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-google-plus fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;
+								if(get_field('pinterest_url','options')) : 
+								?>
+								<li class="social-link pinterest-link">
+									<a href="<?php the_field('pinterest_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-pinterest-p fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;
+								if(get_field('youtube_url','options')) :
+								?>
+								<li class="social-link youtube-link">
+									<a href="<?php the_field('youtube_url','options'); ?>" class="fa-stack fa-lg" target="_blank">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fa fa-youtube-play fa-stack-1x"></i>
+									</a>
+								</li>
+								<?php endif;	?>
+							</ul>
 						</nav>
 					</div>
 
