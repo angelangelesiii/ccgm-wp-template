@@ -270,6 +270,9 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
+// Enable TinyMCE style
+add_editor_style();
+
 /**
  * Implement the Custom Header feature.
  */
