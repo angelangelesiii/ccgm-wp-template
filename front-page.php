@@ -61,6 +61,13 @@ get_header(); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-posts' ); ?>
 
+		<!-- Custom Section -->
+		<?php if ('' !== get_post()->post_content) : ?>
+		<section class="custom-section">
+			<?php the_content(); ?>
+		</section>
+		<?php endif; ?>
+
 		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
 
 		</main><!-- #main -->

@@ -138,6 +138,16 @@ Author: Zimit Media
 	font-size: 1.3em;
 }
 
+/* ========================================= */
+/*  CUSTOM SECTION                           */
+/* ========================================= */
+
+.custom-section {
+	background: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+
 
 /*==============================*/
 /* MEDIA QUERIES                */
