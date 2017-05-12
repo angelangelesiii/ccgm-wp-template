@@ -1004,18 +1004,18 @@ a {
 }
 
 /*Content Styling*/
-.single-page-post blockquote {
+blockquote {
 	font-size: 1.1em;
 	font-style: italic;
 	/*background: #F2F2F2;*/
 	padding: 20px;
-	margin: 0 30px;
+	margin: 0 60px;
 	position: relative;
 	overflow: hidden;
 	z-index: 3;
 	border-radius: 8px;
 }
-.single-page-post blockquote::before {
+blockquote::before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1026,7 +1026,7 @@ a {
 	display: block;
 	content: '';
 }
-.single-page-post blockquote::after {
+blockquote::after {
 	content: '\201C';
 	position: absolute;
 	font-size: 20em;
@@ -1038,6 +1038,12 @@ a {
 	display: block;
 	top: 0;
 	left: 0;
+}
+blockquote p:first-of-type {
+	margin-top: 0;
+}
+blockquote p:last-of-type {
+	margin-bottom: 0;
 }
 
 
