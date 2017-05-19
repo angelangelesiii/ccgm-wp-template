@@ -49,7 +49,7 @@ get_header(); ?>
 			<div class="content">
 				<img src="<?php echo $bannerImage; ?>" alt="" class="banner-display">
 				<p class="text">
-					<a href="<?php echo $bannerButtonLink; ?>" class="btn btn-transparent-white btn-expanding"><?php echo $bannerButtonText; ?></a>
+					<a href="<?php echo $bannerButtonLink; ?>" class="btn btn-transparent-white"><?php echo $bannerButtonText; ?></a>
 				</p>
 			</div>
 
@@ -60,6 +60,13 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/fp-section-pastors' ); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-posts' ); ?>
+
+		<!-- Custom Section -->
+		<?php if ('' !== get_post()->post_content) : ?>
+		<section class="custom-section">
+			<?php the_content(); ?>
+		</section>
+		<?php endif; ?>
 
 		<?php get_template_part( 'template-parts/fp-section-activity' ); ?>
 

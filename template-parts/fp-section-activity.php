@@ -12,6 +12,11 @@
 				<div class="content">
 					
 					<p>We'd love to see you one of these days!</p>
+
+					<?php 
+					if(have_rows('schedule_of_services', 'options')) :
+					?>
+
 					<table class="schedule-table">
 						<thead>
 							<tr>
@@ -20,24 +25,26 @@
 								<td>Activity</td>
 							</tr>
 						</thead>
+
 						<tbody>
-							<tr>
-								<td>Sunday</td>
-								<td>9:30 AM - 11:30 AM</td>
-								<td>Morning Worship Celebration</td>
-							</tr>
-							<tr>
-								<td>Sunday</td>
-								<td>4:00 PM - 6:30 PM</td>
-								<td>Afternoon Worship Celebration</td>
-							</tr>
-							<tr>
-								<td>Saturday</td>
-								<td>5:00 AM - 7:00 AM</td>
-								<td>Prayer Gathering (PUSH)</td>
-							</tr>
+
+						<?php 
+						while(have_rows('schedule_of_services', 'options')) : the_row();
+						?>
+
+						<tr>
+							<td><?php the_sub_field('day'); ?></td>
+							<td><?php the_sub_field('start_time'); ?> - <?php the_sub_field('end_time'); ?></td>
+							<td><?php the_sub_field('activity'); ?></td>
+						</tr>
+
+						<?php endwhile; ?>
+
 						</tbody>
 					</table>
+
+					<?php endif; ?>
+
 					<a href="<?php the_field('link_to_events_page', 'options'); ?>" class="btn btn-transparent-gray">View Events</a>
 				</div>
 		
@@ -53,7 +60,15 @@
 				<div class="acf-map">
 					<div class="marker" data-lat="<?php echo $location['lat'] ?>" data-lng="<?php echo $location['lng'] ?>">
 						<h3>Christ Cares Global Ministries</h3>
-						<p><?php echo $location['address'] ?></p>
+						<p>
+						<?php 
+						if(get_field('footer_address', 'options')) :
+							the_field('footer_address', 'options');
+						else:
+							echo $location['address'];
+						endif;
+						?>
+						</p>
 					</div>
 				</div>
 		

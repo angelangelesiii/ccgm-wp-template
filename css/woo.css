@@ -385,6 +385,53 @@ Author: Zimit Media
 }
 
 
+/*==============================*/
+/* ALERTS                       */
+/*==============================*/
+.woocommerce .woocommerce-error, 
+.woocommerce .woocommerce-info, 
+.woocommerce .woocommerce-message {
+	background: #FFFFFF;
+	border-radius: 4px;
+	border: 1px solid #DBDBDB;
+}
+
+.woocommerce .woocommerce-error {
+	background: #FFF9F9;
+	border: 1px solid #AA0000;
+}
+
+.woocommerce .woocommerce-message {
+	background: #FEFFF9;
+	border: 1px solid #8fae1b;
+}
+
+
+/*==============================*/
+/* FIXES                       */
+/*==============================*/
+
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: #3D7FD1;
+}
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt, .woocommerce input.button.alt:hover{
+	background-color: #68A2EA
+}
+
+.woocommerce a.remove,
+.woocommerce a.remove:hover {
+	text-decoration: none !important;
+}
+
+.woocommerce .coupon .input-text {
+	width: auto !important;
+	height: 38.75px;
+}
+
 
 /*==============================*/
 /* MEDIA QUERIES                */
