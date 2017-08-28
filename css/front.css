@@ -100,6 +100,142 @@ Author: Zimit Media
 	line-height: 1.5em;
 }
 
+/* ========================================= */
+/*  CAROUSEL                                 */
+/* ========================================= */
+
+.featured {
+	padding: 50px 0 40px;
+}
+.featured-container {
+	position: relative;
+}
+.featured-container .featured-item {
+	outline: none;
+}
+.featured-container .featured-item .container {
+	padding: 40px;
+	color: #FFFFFF;
+	background-position: center center;
+	background-size: cover;
+	background-color: #4F4F4F;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+}
+.featured-container .featured-item .container .overlay-under {
+	background: #000000;
+	opacity: 0.3;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.featured-container .featured-item .container:hover .overlay-under {
+	background: #FFFFFF;
+	opacity: 0.7;
+}
+.featured-container .featured-item .container h2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	right: 0;
+	text-align: right;
+	line-height: 1em;
+	z-index: 2;
+	padding: 20px;
+	margin: 0;
+	font-weight: 900;
+	font-size: 2.7em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.featured-container .featured-item .container:hover h2 {
+	color: #212121;
+}
+.featured-container .featured-item .container a .overlay-over {
+	background: #FFFFFF;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 4;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/*Buttons*/
+.featured-container .carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	padding: 0;
+	font-size: 2.5em;
+	background: none;
+	color: #212121;
+	border: none;
+	outline: none;
+	opacity: 0;
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+.featured-container:hover .carousel-button {
+	opacity: 1;
+}
+.featured-container .carousel-button.prev {
+	left: 10px;
+}
+.featured-container .carousel-button.next {
+	right: 10px;
+}
+.featured-container ul.slick-dots {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	bottom: -35px;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+.featured-container:hover ul.slick-dots {
+	opacity: 1;
+}
+.featured-container ul.slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.featured-container ul.slick-dots li button {
+	outline: none;
+	background: #212121;
+	color: #212121;
+	height: 17px;
+	width: 17px;
+	overflow: hidden;
+	border-radius: 50%;
+	font-size: 0em;
+	opacity: 0.5;
+	padding: 0;
+}
+.featured-container ul.slick-dots li.slick-active button {
+	opacity: 1;
+}
+
 
 /* ========================================= */
 /*  PASTORS                                  */
@@ -171,6 +307,14 @@ SMALL ONLY <640px
 	}
 	.pastors .content p {
 		font-size: 1.1em;
+	}
+
+	/*featured*/
+	.featured-container .featured-item .container {
+		height: 320px;
+	}
+	.featured-container .featured-item .container h2 {
+		font-size: 2em;
 	}
 }
 

@@ -55,6 +55,8 @@ get_header(); ?>
 
 		</section>
 
+		<?php get_template_part( 'template-parts/fp-section-featured' ); ?>
+
 		<?php get_template_part( 'template-parts/fp-section-welcome' ); ?>
 
 		<?php get_template_part( 'template-parts/fp-section-pastors' ); ?>

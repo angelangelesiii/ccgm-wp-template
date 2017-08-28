@@ -21,6 +21,37 @@ jQuery(document).ready(function($){ // Document Ready
 		loop: true
 	});
 
+	// ===================================================
+	//  Slick for featured items
+	// ===================================================
+
+	$('.featured-container').slick({
+		centerMode: true,
+		slidesToShow: 2,
+		speed: 1000,
+		autoplay: true,
+		autoplaySpeed: 6000,
+		dots: true,
+		arrows: false,
+		prevArrow: '<button class="carousel-button prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+		nextArrow: '<button class="carousel-button next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+		responsive: [
+			{
+				breakpoint: 1023,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 639,
+				settings: {
+					centerMode: false,
+					slidesToShow: 1,
+				}
+			}
+		]
+	});
+
 
 	// ===================================================
 	//  ScrollMagic Controller
