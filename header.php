@@ -12,6 +12,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="google-site-verification" content="RJ-rOJMs7ThPxIuMpC5oj7zjtYn5sHD8jowmQQGaObY" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#000000">
