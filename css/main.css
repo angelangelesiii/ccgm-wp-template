@@ -284,8 +284,9 @@ a {
 }
 #ccgm-header .logo-container h1 {
 	padding: 0;
-	margin: 11px 0 10px;
+	margin: 20px 0 10px;
 	font-size: 1.6em;
+	line-height: 1em;
 	display: inline-block;
 }
 #ccgm-header .menu-container {
