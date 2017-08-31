@@ -52,6 +52,8 @@ jQuery(document).ready(function($){ // Document Ready
 		]
 	});
 
+	$('.featured-container').show();	
+
 
 	// ===================================================
 	//  ScrollMagic Controller

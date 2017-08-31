@@ -109,6 +109,7 @@ Author: Zimit Media
 }
 .featured-container {
 	position: relative;
+	display: none;
 }
 .featured-container .featured-item {
 	outline: none;
