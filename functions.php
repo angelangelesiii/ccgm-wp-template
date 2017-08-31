@@ -333,7 +333,7 @@ if( function_exists('acf_add_options_page') ) {
 		'page_title' 	=> 'Site Options',
 		'menu_title'	=> 'Site Options',
 		'menu_slug' 	=> 'site-options',
-		'capability'	=> 'edit_posts',
+		'capability'	=> 'publish_posts',
 		'redirect'		=> false,
 		'icon_url'		=> 'dashicons-analytics',
 		'position'		=> '60'
