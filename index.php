@@ -51,7 +51,7 @@ get_header(); ?>
 
 								<?php // For post thumbnail
 								$thumbnailCSS = '';
-								if(has_post_thumbnail()) $thumbnailCSS = 'style="background-image: url(\''.get_the_post_thumbnail_url().'\')"'
+								if(has_post_thumbnail()) $thumbnailCSS = 'style="background-image: url(\''.get_the_post_thumbnail_url(null, 'medium').'\')"'
 								?>
 
 								<a href="<?php the_permalink(); ?>" class="article-thumbnail-container">

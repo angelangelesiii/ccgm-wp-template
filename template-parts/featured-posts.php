@@ -16,7 +16,7 @@
 			$featuredStyle = '';
 
 			if(get_the_post_thumbnail_url($featuredPost)) :
-				$featuredStyle = 'style=" background-image: url(\''.get_the_post_thumbnail_url($featuredPost, 'full' ).'\'); "';
+				$featuredStyle = 'style=" background-image: url(\''.get_the_post_thumbnail_url($featuredPost, 'large' ).'\'); "';
 			else :
 				$featuredStyle = 'style=" background-color: #3D7FD1; "';
 			endif;

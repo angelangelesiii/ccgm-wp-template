@@ -18,7 +18,7 @@ get_header(); ?>
 
 			$headerBackground = '';
 
-			if(has_post_thumbnail()) $headerBackground = 'style=" background-image: url(\''.get_the_post_thumbnail_url().'\'); "';
+			if(has_post_thumbnail()) $headerBackground = 'style=" background-image: url(\''.get_the_post_thumbnail_url(null, 'large').'\'); "';
 
 			?>
 			

@@ -21,7 +21,7 @@
 		if(get_sub_field('custom_image')):
 			$backgroundImage = get_sub_field('custom_image');
 		else:
-			$backgroundImage = get_the_post_thumbnail_url( $featured_id, 'full' );
+			$backgroundImage = get_the_post_thumbnail_url( $featured_id, 'large' );
 		endif;
 		?>
 
