@@ -48,7 +48,7 @@ get_header(); ?>
 				
 				<div class="wrapper">
 				
-					<div class="page-content">
+					<div class="page-content mobile-padding">
 						<?php if(get_the_content()):
 							the_content();
 						else:

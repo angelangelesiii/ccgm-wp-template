@@ -1662,8 +1662,8 @@ SMALL ONLY <640px
 		font-size: 0.65em;
 		padding: 5px;
 	}
-	.page-article .page-content {
-		padding-top: 10px;
+	.page-article .page-content.mobile-padding {
+		padding: 10px 10px 0;
 	}
 
 	/*Comments*/
