@@ -108,7 +108,7 @@ function add_marker( $marker, map ) {
 			infowindow.open( map, marker );
 
 		});
-
+		infowindow.open( map, marker );
 	}
 
 }
